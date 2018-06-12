@@ -1,15 +1,24 @@
 {
-  "name": "nunjucks",
+  "name": "static-site-gen",
   "version": "1.0.0",
-  "description": "",
+  "description": "michael1e.com static site generator with gulpjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike1e/static-site-gen.git"
+  },
+  "author": "michael le",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mike1e/static-site-gen/issues"
+  },
+  "homepage": "https://github.com/mike1e/static-site-gen#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.4",
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-nunjucks-render": "^1.1.0"
   }
 }
