@@ -1,4 +1,4 @@
-# helloGulp
+# helloGulpNunjucks
 
 A gulp webpage starter project
 
