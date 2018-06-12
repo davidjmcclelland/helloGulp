@@ -1,0 +1,46 @@
+/* Your code goes here */
+
+.ide {
+    display: flex;
+    min-height: 98vh;
+}
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    border: 1px solid #fff;
+}
+
+.tabs{
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid #fff;
+}
+
+.design{
+
+}
+
+/*
+flex-basis
+container has a) space left or b) is overfull
+look at a) flex-grow and b) flex-shrink
+calculate portions each item will grow or shrink
+add that to the base size of the item
+
+basis + flex-grow - flex-shrink
+
+
+.container div {
+    float: right;
+    flex: 1 1 25%;
+    margin: 0;
+}
+
+.container div:nth-child(2) {
+    flex-grow: 2;
+}
+
+.container div:nth-child(3) {
+
+}
+*/

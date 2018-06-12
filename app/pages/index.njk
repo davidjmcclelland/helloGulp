@@ -1,0 +1,34 @@
+<!-- layout.html -->
+{% extends "layout.njk" %} <!-- we're extending the layout template -->
+
+{% block title %}FlexBox{% endblock %}
+
+{% block content %}
+    <div class="ide container">
+        <!-- widgets, layout, mashups -->
+        <section class="container left fifth visible">
+            <div class="tabs container visible">
+                <div class="primary full" label="widgets">widgets</div>
+                <div class="secondary" label="layout">layout</div>
+                <div class="secondary" label="mashups">mashups</div>
+            </div>
+        </section>
+
+        <!-- design view, connection viewer -->
+        <section class="container main full visible">
+            <div class="tabs container full visible">
+                <div class="primary design full" label="design">design</div>
+                <div class="primary connections fifth" label="connections">connections</div>
+            </div>
+        </section>
+
+        <!-- services, expressions, filters -->
+        <section class="container right visible">
+            <div class="tabs container visible">
+                <div class="primary full" label="widgets">services</div>
+                <div class="secondary" label="layout">expressions</div>
+                <div class="secondary" label="layout">filters</div>
+            </div>
+        </section>
+    </div>
+{% endblock %}
