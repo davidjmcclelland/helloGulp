@@ -1,7 +1,8 @@
 // gulpfile.js
 var gulp              = require('gulp');
 var browserSync       = require('browser-sync');
-var nunjucksRender    = require('gulp-nunjucks-render'); // importing the plugin
+var nunjucksRender    = require('gulp-nunjucks-render');
+var sass              = require('gulp-sass');
 
 gulp.task('serve', function() {
     console.log('running server');
@@ -23,6 +24,15 @@ gulp.task('nunjucks', function() {
   return gulp.src('app/pages/**/*.+(njk)')
     .pipe(nunjucksRender())
     .pipe(gulp.dest('app'))
+});
+
+gulp.task('sass', function () {
+    return gulp.src('app/css/scss/*.scss')
+        .pipe(sass({
+            // outputStyle: 'compressed'
+        })
+            .on('error', sass.logError))
+        .pipe(gulp.dest('app/css'));
 });
 
 //default task to be run with gulp
