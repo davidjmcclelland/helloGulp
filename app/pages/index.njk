@@ -8,7 +8,11 @@
         <!-- widgets, layout, mashups -->
         <section class="container left fifth visible">
             <div class="tabs container visible">
-                <div class="primary full" label="widgets">widgets</div>
+                <div class="primary full tabs container" label="widgets">
+                    Widgets
+                    <!-- adds widgets list to div -->
+                    {% include "partials/widgets.njk" %}
+                </div>
                 <div class="secondary" label="layout">layout</div>
                 <div class="secondary" label="mashups">mashups</div>
             </div>

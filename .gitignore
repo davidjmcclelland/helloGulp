@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+!/helloGulp.iml
+.idea/
+app/index.html
+helloGulp.iml
