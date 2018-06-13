@@ -1,25 +1,26 @@
 {
-  "name": "static-site-gen",
+  "name": "Mashup-IDE-Sandbox",
   "version": "1.0.0",
-  "description": "michael1e.com static site generator with gulpjs",
+  "description": "Mashup Builder IDE window layout sandbox",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mike1e/static-site-gen.git"
+    "url": "?"
   },
-  "author": "michael le",
-  "license": "ISC",
+  "author": "David J McClelland",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/mike1e/static-site-gen/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/mike1e/static-site-gen#readme",
+  "homepage": "",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",
     "gulp-nunjucks-render": "^1.1.0",
-    "gulp-sass": "^2.2.0"
+    "gulp-sass": "^2.2.0",
+    "require-dir": "^1.0.0"
   }
 }
