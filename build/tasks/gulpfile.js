@@ -8,7 +8,7 @@ gulp.task('serve', function() {
     console.log('running server');
     browserSync({
         server: {
-            baseDir: 'app'
+            baseDir: 'dist/Builder'
         }
     });
 });
@@ -18,21 +18,21 @@ gulp.task('nunjucks', function() {
   console.log('nunjucking');
 
   // configuring the templates folder for nunjucks
-  nunjucksRender.nunjucks.configure(['app/templates/']);
+  nunjucksRender.nunjucks.configure(['src/Builder/templates/']);
 
   // get the pages files
-  return gulp.src('app/pages/**/*.+(njk)')
+  return gulp.src('src/Builder/pages/**/*.+(njk)')
     .pipe(nunjucksRender())
-    .pipe(gulp.dest('app'))
+    .pipe(gulp.dest('dist/Builder'))
 });
 
 gulp.task('sass', function () {
-    return gulp.src('app/css/scss/*.scss')
+    return gulp.src('src/Builder/scss/*.scss')
         .pipe(sass({
             // outputStyle: 'compressed'
         })
             .on('error', sass.logError))
-        .pipe(gulp.dest('app/css'));
+        .pipe(gulp.dest('dist/Builder/css'));
 });
 
 //default task to be run with gulp
