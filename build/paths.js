@@ -14,6 +14,7 @@ module.exports = {
     css:              appRoot + '**/*.css',
     less:             appRoot + '**/App*.less',
     html:             appRoot + '**/*.html',
+    js:               appRoot + '**/*.js',
     images:           [appRoot + '**/*.png', appRoot + '**/*.jpg', appRoot + '**/*.gif'],
     buildScripts:     root + 'build/**/*.js',
     output:           outputRoot,
