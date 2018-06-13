@@ -3,12 +3,17 @@ var gulp              = require('gulp');
 var browserSync       = require('browser-sync');
 var nunjucksRender    = require('gulp-nunjucks-render');
 var sass              = require('gulp-sass');
+var paths             = require('../paths');
+
+var distDirPath = paths.output + 'Builder';  //dist/Builder
+var srcDirPath = paths.appRoot + 'Builder'; //src/Builder
+
 
 gulp.task('serve', function() {
     console.log('running server');
     browserSync({
         server: {
-            baseDir: 'dist/Builder'
+            baseDir:  distDirPath
         }
     });
 });
@@ -23,7 +28,7 @@ gulp.task('nunjucks', function() {
   // get the pages files
   return gulp.src('src/Builder/pages/**/*.+(njk)')
     .pipe(nunjucksRender())
-    .pipe(gulp.dest('dist/Builder'))
+    .pipe(gulp.dest(distDirPath))
 });
 
 gulp.task('sass', function () {
@@ -32,7 +37,7 @@ gulp.task('sass', function () {
             // outputStyle: 'compressed'
         })
             .on('error', sass.logError))
-        .pipe(gulp.dest('dist/Builder/css'));
+        .pipe(gulp.dest(distDirPath + '/css'));
 });
 
 //default task to be run with gulp
