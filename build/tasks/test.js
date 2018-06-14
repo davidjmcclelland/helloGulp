@@ -27,4 +27,4 @@ gulp.task('tdd', function (done) {
     }, done).start();
 });
 
-gulp.task('default', ['test']);
+//gulp.task('default', ['test']);

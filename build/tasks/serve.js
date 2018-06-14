@@ -1,6 +1,9 @@
 var gulp              = require('gulp');
 var browserSync       = require('browser-sync');
 var paths             = require('../paths');
+var jsonServer        = require("gulp-json-srv");
+
+var server = jsonServer.create();
 
 var distDirPath = paths.output + 'Builder';  //dist/Builder
 
@@ -11,6 +14,16 @@ gulp.task('serve', function() {
             baseDir:  distDirPath
         }
     });
+
 });
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['mock','mockWatch','serve']);
+
+gulp.task("mock", function(){
+    return gulp.src("data.json")
+        .pipe(server.pipe());
+});
+
+gulp.task("mockWatch", function () {
+    gulp.watch(["data.json"], ["db"]);
+});

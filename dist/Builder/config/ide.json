@@ -1,0 +1,27 @@
+{
+    "Widgets": [
+      {
+        "name": "Button",
+        "Themeable": true
+      },
+      {
+        "name": "Grid",
+        "Themeable": false
+      },
+      {
+        "name": "Text Box",
+        "Themeable": true
+      },
+      {
+        "name": "Card",
+        "Themeable": true
+      }
+    ],
+    "Layout": ["null"],
+    "Mashups": ["null"],
+    "Design": ["null"],
+    "Connections": ["null"],
+    "Services": ["null"],
+    "Expressions": ["null"],
+    "Filters": ["null"]
+}
