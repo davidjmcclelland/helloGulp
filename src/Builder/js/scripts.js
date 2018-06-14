@@ -4,24 +4,23 @@ function greet(name) {
 
 
 
-getJSON = function(fileName) {
+getJSON = function(api, requestedData) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
             var response = JSON.parse(xhttp.responseText);
-            var ide = response.ide;
-            var widgets = ide.widgets;
+            var iter = response[requestedData];
             var output = '';
-            for (var i = 0; i < widgets.length; i++) {
-                output += '<li>' + widgets[i].name + ' is themeable? ' + widgets[i].Themeable + '</li>';
+            for (var i = 0; i < iter.length; i++) {
+                output += '<li>' + iter[i].name + ' width is: ' + iter[i].width["default"] + '</li>';
             }
             document.getElementById('repeater').innerHTML = output;
-            return ide;
+            return iter;
         }
     };
-    xhttp.open("GET", "config/" + fileName + ".json", true);
+    xhttp.open("GET", "http://localhost:3002/" + api , true);
     xhttp.send();
 };
 
-var ideModel = getJSON('ide');
+var ideModel = getJSON('ide', 'docks');
 console.log("ide: "+ ideModel);
