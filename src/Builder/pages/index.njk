@@ -4,35 +4,40 @@
 {% block title %}FlexBox{% endblock %}
 
 {% block content %}
+
+    <!-- add dock to div -->
+    {% include "partials/dock1.njk" %}
+
     <div class="ide container">
         <!-- widgets, layout, mashups -->
-        <section class="container left fifth visible">
+
             <div class="tabs container visible">
                 <div class="primary full tabs container" label="widgets">
                     Widgets
                     <!-- adds widgets list to div -->
                     {% include "partials/widgets.njk" %}
                 </div>
-                <div class="secondary" label="layout">layout</div>
-                <div class="secondary" label="mashups">mashups</div>
+                <div class="secondary" id="layout">layout</div>
+                <div class="secondary" id="mashups">mashups</div>
             </div>
-        </section>
 
         <!-- design view, connection viewer -->
         <section class="container main full visible">
             <div class="tabs container full visible">
-                <div class="primary design full" label="design">design</div>
-                <div class="primary connections fifth" label="connections">connections</div>
+                <div class="primary design full" id="design">design</div>
+                <div class="primary connections fifth" id="connections">connections</div>
             </div>
         </section>
 
         <!-- services, expressions, filters -->
-        <section class="container right visible">
             <div class="tabs container visible">
-                <div class="primary full" label="widgets">services</div>
-                <div class="secondary" label="layout">expressions</div>
-                <div class="secondary" label="layout">filters</div>
+                <div class="primary full" id="widgets">services</div>
+                <div class="secondary" id="layout">expressions</div>
+                <div class="secondary" id="filters">filters</div>
             </div>
-        </section>
     </div>
+
+    <!-- add dock to div -->
+    {% include "partials/dock2.njk" %}
+
 {% endblock %}

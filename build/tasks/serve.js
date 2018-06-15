@@ -17,7 +17,7 @@ gulp.task('serve', function() {
 
 });
 
-gulp.task('default', ['mock','mockWatch','serve']);
+gulp.task('default', ['copy-js', 'mock', 'mockWatch', 'nunjucks', 'serve']);
 
 gulp.task("mock", function(){
     return gulp.src("data.json")

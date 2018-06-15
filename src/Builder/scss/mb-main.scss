@@ -1,9 +1,16 @@
-/* Your code goes here */
-
 .ide {
     display: flex;
     min-height: 98vh;
 }
+
+.dock.container{
+    display:none;
+}
+
+.loaded-dock{
+    display:flex;
+}
+
 .container {
     display: flex;
     flex-flow: row nowrap;
