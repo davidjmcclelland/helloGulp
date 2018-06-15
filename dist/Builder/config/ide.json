@@ -4,32 +4,53 @@
       {
         "id": "dock1",
         "name": "Left Dock",
-        "width":
-        {
+        "width": {
           "default": 200,
           "user": null
         },
-        "panels": {
+        "sections": {
           "default": [
             {
-              "id": "widgets",
-              "name": "Widgets",
-              "selected": true
+              "id": "upper",
+              "name": "Upper Section",
+              "height": 400,
+              "selected": true,
+              "panels": {
+                "default": [
+                  {
+                    "id": "widgets",
+                    "name": "Widgets",
+                    "selected": true
+                  },
+                  {
+                    "id": "mashups",
+                    "name": "Mashups",
+                    "selected": false
+                  },
+                  {
+                    "id": "workspace",
+                    "name": "Workspace",
+                    "selected": false
+                  }
+                ],
+                "user": null
+              }
             },
             {
-              "id": "mashups",
-              "name": "Mashups",
-              "selected": false
-            },
-            {
-              "id": "workspace",
-              "name": "Workspace",
-              "selected": false
-            },
-            {
-              "id": "context",
-              "name": "Context",
-              "selected": false
+              "id": "lower",
+              "name": "Lower Section",
+              "height": 200,
+              "selected": false,
+              "panels": {
+                "default": [
+                  {
+                    "id": "context",
+                    "name": "Context",
+                    "selected": true
+                  }
+                ],
+                "user": null
+              }
             }
           ],
           "user": null
@@ -42,27 +63,49 @@
           "default": 200,
           "user": null
         },
-        "panels": {
+        "sections": {
           "default": [
             {
-              "id": "data",
-              "name": "Data",
-              "selected": true
+              "id": "upper",
+              "name": "Upper Section",
+              "height": 400,
+              "selected": true,
+              "panels": {
+                "default": [
+                  {
+                    "id": "data",
+                    "name": "Data",
+                    "selected": true
+                  },
+                  {
+                    "id": "session",
+                    "name": "Session",
+                    "selected": false
+                  },
+                  {
+                    "id": "user",
+                    "name": "User",
+                    "selected": false
+                  }
+                ],
+                "user": null
+              }
             },
             {
-              "id": "session",
-              "name": "Session",
-              "selected": false
-            },
-            {
-              "id": "user",
-              "name": "User",
-              "selected": false
-            },
-            {
-              "id": "parameters",
-              "name": "Parameters",
-              "selected": false
+              "id": "lower",
+              "name": "Lower Section",
+              "height": 200,
+              "selected": true,
+              "panels": {
+                "default": [
+                  {
+                    "id": "parameters",
+                    "name": "Parameters",
+                    "selected": true
+                  }
+                ],
+                "user": null
+              }
             }
           ],
           "user": null

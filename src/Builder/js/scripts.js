@@ -3,30 +3,55 @@ function greet(name) {
     return 'Hello, ' + name + '!';
 }
 
-let ideModel = $getJSON('ide', 'docks');
+$getJSON('ide', 'docks');
 
-function enableDocks(data){
+function enableDocks(data) {
     // return data for processing
-    let docks = data.docks, i = 0, ii = 0;
-    for(i = 0; i < docks.length; i++ ) {
+    let docks = data.docks, i = 0;
+    for (i = 0; i < docks.length; i++) {
         // set dock titles
         $('#' + docks[i].id + ' .title').text(docks[i].name);
-    // populate dock with panels
-        let panels = docks[i]['panels'];
+        // populate dock with sections
+        let sections = docks[i]['sections'];
+        // are there preferences set?
+        if (sections.user !== null) {
+            console.log(sections.user.length);
+            sections = sections.user;
+        } else {
+            sections = sections.default;
+        }
+        enableSections(sections);
+    }
+}
+
+function enableSections(sections) {
+    let i = 0, panels;
+    for (i = 0; i < sections.length; i++) {
+        console.log(sections[i].name);
+        $('#' + sections[i].id).text(sections[i].name);
+        // populate dock with sections
+        let panels = sections[i]['panels'];
         // are there preferences set?
         if (panels.user !== null) {
             console.log(panels.user.length);
             panels = panels.user;
-        }else{
+        } else {
+            console.log("panels.default:" + panels.default);
             panels = panels.default;
         }
-            for(ii = 0; ii < panels.length; ii++ ) {
-            console.log(panels[ii].name);
-            $('#' + panels[ii].id).text(panels[ii].name);
-        }
-
-
+        console.log(panels.length);
+        enablePanels(panels);
     }
+}
+
+function enablePanels(panels) {
+    let i = 0;
+    console.log(panels.length);
+    for (i = 0; i < panels.length; i++) {
+        $('#' + panels[i].id).text(panels[i].name);
+    }
+}
+
     // drag/drop support
     $('.dock').show(500)
         .switchClass('dock', 'loaded-dock', 1000)
@@ -47,7 +72,7 @@ function enableDocks(data){
 
         });
     $('.panel').draggable({revert: true});
-}
+
 
 function $getJSON(api, requestedData) {
     $.ajax({
