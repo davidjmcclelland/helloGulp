@@ -8,33 +8,33 @@
     <!-- add dock to div -->
     {% include "partials/dock1.njk" %}
 
-    <div class="ide container">
+    <div class="dock container" id="design">Design
         <!-- widgets, layout, mashups -->
 
-            <div class="tabs container visible">
-                <div class="primary full tabs container" label="widgets">
-                    Widgets
-                    <!-- adds widgets list to div -->
-                    {% include "partials/widgets.njk" %}
-                </div>
-                <div class="secondary" id="layout">layout</div>
-                <div class="secondary" id="mashups">mashups</div>
-            </div>
+            {#<div class="tabs container visible">#}
+                {#<div class="primary full tabs container" label="widgets">#}
+                    {#Widgets#}
+                    {#<!-- adds widgets list to div -->#}
+                    {#{% include "partials/widgets.njk" %}#}
+                {#</div>#}
+                {#<div class="secondary" id="layout">layout</div>#}
+                {#<div class="secondary" id="mashups">mashups</div>#}
+            {#</div>#}
 
         <!-- design view, connection viewer -->
-        <section class="container main full visible">
-            <div class="tabs container full visible">
+
+
                 <div class="primary design full" id="design">design</div>
                 <div class="primary connections fifth" id="connections">connections</div>
-            </div>
-        </section>
 
-        <!-- services, expressions, filters -->
-            <div class="tabs container visible">
-                <div class="primary full" id="widgets">services</div>
-                <div class="secondary" id="layout">expressions</div>
-                <div class="secondary" id="filters">filters</div>
-            </div>
+
+
+        {#<!-- services, expressions, filters -->#}
+            {#<div class="tabs container visible">#}
+                {#<div class="primary full" id="widgets">services</div>#}
+                {#<div class="secondary" id="layout">expressions</div>#}
+                {#<div class="secondary" id="filters">filters</div>#}
+            {#</div>#}
     </div>
 
     <!-- add dock to div -->

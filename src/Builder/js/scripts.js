@@ -3,26 +3,43 @@ function greet(name) {
     return 'Hello, ' + name + '!';
 }
 
-getJSON = function (api, requestedData) {
-    let xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState === 4 && this.status === 200) {
-            let response = JSON.parse(xhttp.responseText);
-            let iter = response[requestedData];
-            let output = '';
-            for (let i = 0; i < iter.length; i++) {
-                output += '<li>' + iter[i].name + ' width is: ' + iter[i].width["default"] + '</li>';
-            }
-            //document.getElementById('repeater').innerHTML = output;
-            return iter;
-        }
-    };
-    xhttp.open("GET", "http://localhost:3002/" + api, true);
-    xhttp.send();
-};
+function enableDocks(data){
+    // return data for processing
+    let docks = data.docks, i = 0;
+    for(i = 0; i < docks.length; i++ ) {
+        // console.log("enable " + docks[i].id);
+        // console.log("enable " + docks[i].name);
+        // console.log("$('#'+docks[i].id: " + $('#' + docks[i].id).length);
+        // console.log('#' + docks[i].id + ' .title: ' + $('#' + docks[i].id + ' .title').length);
+        // set dock titles
+        $('#' + docks[i].id + ' .title').text(docks[i].name);
+    // populate dock with panels
+let panels = docks[i].panels;
+console.log(panels.length);
+    // are there preferences set?
 
-let ideModel = $getJSON('ide', 'docks');
-console.log("ide: " + ideModel);
+    }
+    // drag/drop support
+    $('.dock').show(500)
+        .switchClass('dock', 'loaded-dock', 1000)
+        .droppable({
+            accept: '.panel', hoverClass: 'dragging', tolerance: "touch",
+
+            drop: function (e, ui) {
+
+                // move element from one dock to the other
+                // id the dragged element
+                console.log("ui: " + ui.draggable.id);
+                // id the drop target element
+                console.log("e: " + e.target.id);
+                $(ui.draggable).appendTo($(this));
+                //$(this).find("h2").text("Dropped");
+                // ui.draggable.find("h2").text("Dropped");
+            }
+
+        });
+    $('.panel').draggable({revert: true});
+}
 
 function $getJSON(api, requestedData) {
     $.ajax({
@@ -34,30 +51,8 @@ function $getJSON(api, requestedData) {
             cache: false
         }
     ).done(function (data) {
-        // return data for processing
-        console.log(data.docks[0].name);
-        $('.dock').show(1000)
-            .switchClass('dock', 'loaded-dock', 1000)
-            .droppable({
-                accept: '.panel', hoverClass: 'dragging', tolerance: "touch",
+        enableDocks(data);
 
-                drop: function (e, ui) {
-
-                    // move element from one dock to the other
-                    // id the dragged element
-                    console.log("ui: " + ui.draggable.id);
-                    // id the drop target element
-                    console.log("e: " + e.target.id);
-                    $(ui.draggable).appendTo($(this));
-                    //$(this).find("h2").text("Dropped");
-                    // ui.draggable.find("h2").text("Dropped");
-                }
-
-            });
-
-        $('.panel').draggable({revert: true});
-
-        console.log("$('.panel'): " + $('.panel').length);
 // can also use fit, intersect, pointer
         return data[requestedData];
     }).fail(function (xhr, status) {

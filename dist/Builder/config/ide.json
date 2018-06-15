@@ -2,7 +2,8 @@
   "ide": {
     "docks": [
       {
-        "name": "leftDock",
+        "id": "dock1",
+        "name": "Left Dock",
         "width":
         {
           "default": 200,
@@ -35,7 +36,8 @@
         ]
       },
       {
-        "name": "rightDock",
+        "id": "dock2",
+        "name": "Right Dock",
         "width": {
           "default": 200,
           "user": null
