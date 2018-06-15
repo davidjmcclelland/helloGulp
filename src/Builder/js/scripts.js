@@ -3,20 +3,28 @@ function greet(name) {
     return 'Hello, ' + name + '!';
 }
 
+let ideModel = $getJSON('ide', 'docks');
+
 function enableDocks(data){
     // return data for processing
-    let docks = data.docks, i = 0;
+    let docks = data.docks, i = 0, ii = 0;
     for(i = 0; i < docks.length; i++ ) {
-        // console.log("enable " + docks[i].id);
-        // console.log("enable " + docks[i].name);
-        // console.log("$('#'+docks[i].id: " + $('#' + docks[i].id).length);
-        // console.log('#' + docks[i].id + ' .title: ' + $('#' + docks[i].id + ' .title').length);
         // set dock titles
         $('#' + docks[i].id + ' .title').text(docks[i].name);
     // populate dock with panels
-let panels = docks[i].panels;
-console.log(panels.length);
-    // are there preferences set?
+        let panels = docks[i]['panels'];
+        // are there preferences set?
+        if (panels.user !== null) {
+            console.log(panels.user.length);
+            panels = panels.user;
+        }else{
+            panels = panels.default;
+        }
+            for(ii = 0; ii < panels.length; ii++ ) {
+            console.log(panels[ii].name);
+            $('#' + panels[ii].id).text(panels[ii].name);
+        }
+
 
     }
     // drag/drop support

@@ -9,31 +9,31 @@
           "default": 200,
           "user": null
         },
-        "panels": [
-          {
-            "default": [
-              {
-                "name": "Widgets",
-                "selected": true
-              },
-              {
-                "name": "Mashups",
-                "selected": false
-              },
-              {
-                "name": "Workspace",
-                "selected": false
-              },
-              {
-                "name": "Context",
-                "selected": false
-              }
-            ]
-          },
-          {
-            "user": null
-          }
-        ]
+        "panels": {
+          "default": [
+            {
+              "id": "widgets",
+              "name": "Widgets",
+              "selected": true
+            },
+            {
+              "id": "mashups",
+              "name": "Mashups",
+              "selected": false
+            },
+            {
+              "id": "workspace",
+              "name": "Workspace",
+              "selected": false
+            },
+            {
+              "id": "context",
+              "name": "Context",
+              "selected": false
+            }
+          ],
+          "user": null
+        }
       },
       {
         "id": "dock2",
@@ -42,28 +42,31 @@
           "default": 200,
           "user": null
         },
-        "panels": [
-          {
-            "default": [
-              {
-                "name": "Data",
-                "selected": true
-              },
-              {
-                "name": "Session",
-                "selected": false
-              },
-              {
-                "name": "User",
-                "selected": false
-              },
-              {
-                "name": "Parameters",
-                "selected": false
-              }
-            ]
-          }
-        ]
+        "panels": {
+          "default": [
+            {
+              "id": "data",
+              "name": "Data",
+              "selected": true
+            },
+            {
+              "id": "session",
+              "name": "Session",
+              "selected": false
+            },
+            {
+              "id": "user",
+              "name": "User",
+              "selected": false
+            },
+            {
+              "id": "parameters",
+              "name": "Parameters",
+              "selected": false
+            }
+          ],
+          "user": null
+        }
       }
     ]
   }
