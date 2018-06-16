@@ -20,6 +20,42 @@ function enableDocks(data) {
         } else {
             sections = sections.default;
         }
+
+        $('.dock').resizable({
+            helper: "ui-resizable-helper",
+            containment: "parent",
+            handles: 'e',
+            resize: function (event, ui) {
+                //let width = (ui.size.width);
+                $(this).css('height', '');
+            },
+            stop: function (event, ui) {
+
+                // let w2 = (ui.size.width);
+                //w2 = Math.min(w2, 300);
+                // $('.dock').css('width', w2);
+            }
+        });
+
+        // drag/drop support
+        $('.dock').show(500)
+            .switchClass('dock', 'loaded-dock', 1000)
+            .droppable({
+                accept: '.section', hoverClass: 'dragging', tolerance: "touch",
+
+                drop: function (e, ui) {
+                    // move element from one dock to the other
+                    // id the dragged element
+                    console.log("ui: " + ui.draggable.id);
+                    // id the drop target element
+                    console.log("e: " + e.target.id);
+                    $(ui.draggable).appendTo($(this));
+                    //$(this).find("h2").text("Dropped");
+                    // ui.draggable.find("h2").text("Dropped");
+                }
+
+            });
+
         enableSections(sections);
     }
 }
@@ -39,39 +75,21 @@ function enableSections(sections) {
             console.log("panels.default:" + panels.default);
             panels = panels.default;
         }
-        console.log(panels.length);
+
+        $('.section').draggable({revert: true});
+
         enablePanels(panels);
     }
 }
 
 function enablePanels(panels) {
     let i = 0;
-    console.log(panels.length);
     for (i = 0; i < panels.length; i++) {
         $('#' + panels[i].id).text(panels[i].name);
     }
 }
 
-    // drag/drop support
-    $('.dock').show(500)
-        .switchClass('dock', 'loaded-dock', 1000)
-        .droppable({
-            accept: '.panel', hoverClass: 'dragging', tolerance: "touch",
 
-            drop: function (e, ui) {
-
-                // move element from one dock to the other
-                // id the dragged element
-                console.log("ui: " + ui.draggable.id);
-                // id the drop target element
-                console.log("e: " + e.target.id);
-                $(ui.draggable).appendTo($(this));
-                //$(this).find("h2").text("Dropped");
-                // ui.draggable.find("h2").text("Dropped");
-            }
-
-        });
-    $('.panel').draggable({revert: true});
 
 
 function $getJSON(api, requestedData) {
@@ -92,6 +110,6 @@ function $getJSON(api, requestedData) {
         console.log("error");
     }).always(function (xhr, status) {
         // reset things
-        console.log("always clean up");
+
     });
 }

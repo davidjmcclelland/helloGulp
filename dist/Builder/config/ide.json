@@ -11,7 +11,7 @@
         "sections": {
           "default": [
             {
-              "id": "upper",
+              "id": "upper-left",
               "name": "Upper Section",
               "height": 400,
               "selected": true,
@@ -37,7 +37,7 @@
               }
             },
             {
-              "id": "lower",
+              "id": "lower-left",
               "name": "Lower Section",
               "height": 200,
               "selected": false,
@@ -66,7 +66,7 @@
         "sections": {
           "default": [
             {
-              "id": "upper",
+              "id": "upper-right",
               "name": "Upper Section",
               "height": 400,
               "selected": true,
@@ -92,7 +92,7 @@
               }
             },
             {
-              "id": "lower",
+              "id": "lower-right",
               "name": "Lower Section",
               "height": 200,
               "selected": true,
