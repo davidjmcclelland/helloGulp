@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JSON Sandbox</title>
+  </head>
+  <body>
+
+  <input type="button" value = "getIDE" onClick="$getPrefs('ide')"/>
+    <ul id="repeater"></ul>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+      // get and set preferences via  Ajax rest calls to tw-server
+
+      let username = 'Administrator';
+      let password = 'trUf6yuz2?_Gub';
+
+
+      $getPrefs('ide', 'docks');
+
+      function $getPrefs() {
+          $.ajax({
+                  url: "http://dmcclelland0l1:8080/Thingworx/Resources/CurrentSessionInfo/Services/GetPersistentValue",
+              username: 'Administrator',
+              password: 'QWRtaW5pc3RyYXRvcjp0clVmNnl1ejI/X0d1Yg==',
+              type: "POST",
+                  contentType: "application/json",
+                  data: '',
+                  dataType: "json",
+                  cache: false,
+              beforeSend: function (xhr) {
+                  xhr.setRequestHeader ("Authorization", "Basic " + btoa('Administrator' + ":" + 'trUf6yuz2?_Gub'));
+              },
+              }
+          ).done(function (data) {
+              updateDocks(data);
+
+          }).fail(function (xhr, status) {
+              console.log("error");
+          }).always(function (xhr, status) {
+              // reset things
+
+          });
+      }
+
+      let updateDocks = function(data){
+          console.log("data.toolboxWidth: " + data.userPreferences.toolboxWidth);
+      };
+  </script>
+  </body>
+</html>

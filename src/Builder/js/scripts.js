@@ -4,6 +4,7 @@ function greet(name) {
 }
 
 $getJSON('ide', 'docks');
+let prefWidth = 0;
 
 function enableDocks(data) {
     // return data for processing
@@ -11,11 +12,15 @@ function enableDocks(data) {
     for (i = 0; i < docks.length; i++) {
         // set dock titles
         $('#' + docks[i].id + ' .title').text(docks[i].name);
+        // get saved dock width pref
+
+        console.log("prefWidth: " + prefWidth);
+        $('#' + docks[i].id).css('width', prefWidth);
         // populate dock with sections
         let sections = docks[i]['sections'];
         // are there preferences set?
         if (sections.user !== null) {
-            console.log(sections.user.length);
+            //console.log(sections.user.length);
             sections = sections.user;
         } else {
             sections = sections.default;
@@ -26,14 +31,14 @@ function enableDocks(data) {
             containment: "parent",
             handles: 'e',
             resize: function (event, ui) {
-                //let width = (ui.size.width);
+
                 $(this).css('height', '');
                 $(this).css('left', '');
             },
             stop: function (event, ui) {
                 $(this).css('height', '');
                 $(this).css('left', '');
-                // let w2 = (ui.size.width);
+                $setPrefs(ui.size.width);
                 //w2 = Math.min(w2, 300);
                 // $('.dock').css('width', w2);
             }
@@ -48,9 +53,9 @@ function enableDocks(data) {
                 drop: function (e, ui) {
                     // move element from one dock to the other
                     // id the dragged element
-                    console.log("ui: " + ui.draggable.id);
+                   // console.log("ui: " + ui.draggable.id);
                     // id the drop target element
-                    console.log("e: " + e.target.id);
+                    //console.log("e: " + e.target.id);
                     $(ui.draggable).appendTo($(this));
                     //$(this).find("h2").text("Dropped");
                     // ui.draggable.find("h2").text("Dropped");
@@ -65,16 +70,16 @@ function enableDocks(data) {
 function enableSections(sections) {
     let i = 0, panels;
     for (i = 0; i < sections.length; i++) {
-        console.log(sections[i].name);
+       // console.log(sections[i].name);
         $('#' + sections[i].id).text(sections[i].name);
         // populate dock with sections
         let panels = sections[i]['panels'];
         // are there preferences set?
         if (panels.user !== null) {
-            console.log(panels.user.length);
+        //    console.log(panels.user.length);
             panels = panels.user;
         } else {
-            console.log("panels.default:" + panels.default);
+       //     console.log("panels.default:" + panels.default);
             panels = panels.default;
         }
 
@@ -104,8 +109,8 @@ function $getJSON(api, requestedData) {
             cache: false
         }
     ).done(function (data) {
+        $getPrefs();
         enableDocks(data);
-
 // can also use fit, intersect, pointer
         return data[requestedData];
     }).fail(function (xhr, status) {
