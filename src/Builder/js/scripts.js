@@ -28,9 +28,11 @@ function enableDocks(data) {
             resize: function (event, ui) {
                 //let width = (ui.size.width);
                 $(this).css('height', '');
+                $(this).css('left', '');
             },
             stop: function (event, ui) {
-
+                $(this).css('height', '');
+                $(this).css('left', '');
                 // let w2 = (ui.size.width);
                 //w2 = Math.min(w2, 300);
                 // $('.dock').css('width', w2);
