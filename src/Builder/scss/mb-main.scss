@@ -1,32 +1,37 @@
 .ide {
-    display: flex;
-    min-height: 98vh;
+  display: flex;
+  min-height: 98vh;
 }
 
-.dock.container{
-    display:none;
+.dock.container {
+  display: none;
 }
 
-.loaded-dock{
-    display:flex;
+.loaded-dock {
+  display: flex;
 }
 
 .container {
-    display: flex;
-    flex-flow: row nowrap;
-    border: 1px solid #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  border: 1px solid #fff;
 }
 
-.tabs{
-    display: flex;
-    flex-flow: column nowrap;
-    border: 1px solid #fff;
+.tabs {
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid #fff;
 }
 
-.design{
-
+#design {
+  flex-flow: column nowrap;
+  flex: 1;
 }
-
+#workspace{
+  flex:2;
+  flex-flow:column;
+  margin-bottom:0;
+}
 /*
 flex-basis
 container has a) space left or b) is overfull

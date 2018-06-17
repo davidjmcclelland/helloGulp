@@ -26,12 +26,11 @@ function enableDocks(data) {
             sections = sections.default;
         }
 
-        $('.dock').resizable({
+        $('#dock1').resizable({
             helper: "ui-resizable-helper",
             containment: "parent",
             handles: 'e',
             resize: function (event, ui) {
-
                 $(this).css('height', '');
                 $(this).css('left', '');
             },
@@ -39,6 +38,23 @@ function enableDocks(data) {
                 $(this).css('height', '');
                 $(this).css('left', '');
                 $setPrefs(ui.size.width);
+                //w2 = Math.min(w2, 300);
+                // $('.dock').css('width', w2);
+            }
+        });
+
+        $('#dock2').resizable({
+            helper: "ui-resizable-helper",
+            containment: "parent",
+            handles: 'w',
+            resize: function (event, ui) {
+                $(this).css('height', '');
+                //$(this).css('right', '');
+            },
+            stop: function (event, ui) {
+                $(this).css('height', '');
+                //$(this).css('right', '');
+                //$setPrefs(ui.size.width);
                 //w2 = Math.min(w2, 300);
                 // $('.dock').css('width', w2);
             }
