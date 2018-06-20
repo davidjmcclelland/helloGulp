@@ -12,10 +12,6 @@ function enableDocks(data) {
     for (i = 0; i < docks.length; i++) {
         // set dock titles
         $('#' + docks[i].id + ' .title').text(docks[i].name);
-        // get saved dock width pref
-
-        console.log("prefWidth: " + prefWidth);
-        $('#' + docks[i].id).css('width', prefWidth);
         // populate dock with sections
         let sections = docks[i]['sections'];
         // are there preferences set?
@@ -42,34 +38,31 @@ function enableDocks(data) {
                 // $('.dock').css('width', w2);
             }
         });
+        /*
 
-        $('#dock2').resizable({
-            helper: "ui-resizable-helper",
-            containment: "parent",
-            handles: 'w',
-            resize: function (event, ui) {
-                $(this).css('height', '');
-                //$(this).css('right', '');
-            },
-            stop: function (event, ui) {
-                $(this).css('height', '');
-                //$(this).css('right', '');
-                //$setPrefs(ui.size.width);
-                //w2 = Math.min(w2, 300);
-                // $('.dock').css('width', w2);
-            }
-        });
+                $('#dock2').resizable({
+                    helper: "ui-resizable-helper",
+                    containment: "parent",
+                    handles: 'w',
+                    resize: function (event, ui) {
+                        $(this).css('height', '');
+                    },
+                    stop: function (event, ui) {
+                        $(this).css('height', '');
+                    }
+                });
+        */
 
         // drag/drop support
-        $('.dock').show(500)
-            .switchClass('dock', 'loaded-dock', 1000)
+        $('.dock').show()
+            .switchClass('dock', 'loaded-dock', 500)
             .droppable({
                 accept: '.section', hoverClass: 'dragging', tolerance: "touch",
 
                 drop: function (e, ui) {
                     // move element from one dock to the other
                     // id the dragged element
-                   // console.log("ui: " + ui.draggable.id);
+                    // console.log("ui: " + ui.draggable.id);
                     // id the drop target element
                     //console.log("e: " + e.target.id);
                     $(ui.draggable).appendTo($(this));
@@ -79,6 +72,9 @@ function enableDocks(data) {
 
             });
 
+        // get saved dock width pref
+        console.log("prefWidth: " + docks[i].id + ", " + prefWidth);
+        $('#' + docks[i].id).css('width', prefWidth);
         enableSections(sections);
     }
 }
@@ -86,16 +82,16 @@ function enableDocks(data) {
 function enableSections(sections) {
     let i = 0, panels;
     for (i = 0; i < sections.length; i++) {
-       // console.log(sections[i].name);
+        // console.log(sections[i].name);
         $('#' + sections[i].id).text(sections[i].name);
         // populate dock with sections
         let panels = sections[i]['panels'];
         // are there preferences set?
         if (panels.user !== null) {
-        //    console.log(panels.user.length);
+            //    console.log(panels.user.length);
             panels = panels.user;
         } else {
-       //     console.log("panels.default:" + panels.default);
+            //     console.log("panels.default:" + panels.default);
             panels = panels.default;
         }
 

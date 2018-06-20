@@ -18,3 +18,11 @@ gulp.task('nunjucks', function() {
     .pipe(nunjucksRender())
     .pipe(gulp.dest(distDirPath))
 });
+
+gulp.task('watch-nunjucks', () => {
+    gulp.watch('src/Builder/templates/**/*.+(njk)', ['nunjucks'])
+});
+
+gulp.task('watch-nunjucks', () => {
+    gulp.watch('src/Builder/templates/**/*.+(njk)', ['nunjucks'])
+});

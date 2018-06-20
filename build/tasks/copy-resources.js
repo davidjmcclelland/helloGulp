@@ -1,9 +1,9 @@
 'use strict';
-var gulp = require('gulp');
-var paths = require('../paths');
+let gulp = require('gulp');
+let paths = require('../paths');
 
-var srcDirPath = paths.appRoot + 'Builder/js/**/*.js'; //src/Builder/js
-var distDirPath = paths.output + 'Builder/js';  //dist/Builder/js
+let srcDirPath = paths.appRoot + 'Builder/js/**/*.js'; //src/Builder/js
+let distDirPath = paths.output + 'Builder/js';  //dist/Builder/js
 
 gulp.task('copy-js', () => {
     return gulp.src(srcDirPath)
@@ -15,4 +15,7 @@ gulp.task('copy-images', () => {
         .pipe(gulp.dest(paths.package));
 });
 
+gulp.task('watch-js', () => {
+    gulp.watch(srcDirPath, ['copy-js'])
+});
 //gulp.task('copy-resources', gulp.series('copy-html', 'copy-images'));

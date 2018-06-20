@@ -18,7 +18,7 @@
   "homepage": "",
   "devDependencies": {
     "browser-sync": "^2.11.1",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-json-srv": "^1.2.0",
     "gulp-nunjucks-render": "^1.1.0",
     "gulp-sass": "^2.2.0",
@@ -38,5 +38,8 @@
   "karma-coverage": "1.1.1",
   "karma-junit-reporter": "1.2.0",
   "karma-remap-istanbul": "0.6.0",
-  "karma-requirejs": "1.1.0"
+  "karma-requirejs": "1.1.0",
+  "dependencies": {
+    "orchestrator": "^0.3.8"
+  }
 }
