@@ -1,6 +1,8 @@
+$offWhite: #eff;
+
 .ide {
   display: flex;
-  min-height: 98vh;
+  min-height: 100vh;
 }
 
 .dock.container {
@@ -14,13 +16,13 @@
 .container {
   display: flex;
   flex-flow: row nowrap;
-  border: 1px solid #fff;
+  border: 1px solid $offWhite;
 }
 
 .tabs {
   display: flex;
   flex-flow: column nowrap;
-  border: 1px solid #fff;
+  border: 1px solid $offWhite;
 }
 
 #design {
@@ -36,6 +38,7 @@
   flex-flow:column;
   margin-bottom:0;
 }
+
 /*
 flex-basis
 container has a) space left or b) is overfull
@@ -44,7 +47,6 @@ calculate portions each item will grow or shrink
 add that to the base size of the item
 
 basis + flex-grow - flex-shrink
-
 
 .container div {
     float: right;

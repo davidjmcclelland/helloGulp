@@ -18,7 +18,7 @@ gulp.task('serve', function() {
     });
 });
 
-gulp.task('default', ['watch-js', 'watch-sass', 'watch-nunjucks', 'serve']);
+gulp.task('default', ['watch-js', 'watch-sass', 'watch-nunjucks', 'tdd', 'serve']);
 
 gulp.task("mock", function(){
     return gulp.src("dist/Builder/config/ide.json")
@@ -29,4 +29,4 @@ gulp.task("mockWatch", function () {
     gulp.watch(["ide.json"], ["mock"]);
 });
 
-gulp.task("default", ['mock', 'mockWatch']);
+//gulp.task("default", ['mock', 'mockWatch']);

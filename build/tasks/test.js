@@ -19,9 +19,6 @@ gulp.task('test', function (done) {
  * Watch for file changes and re-run tests on each change
  */
 gulp.task('tdd', function (done) {
-
-
-
     new Server({
         configFile: path.join(__dirname, '..', '..', 'karma.conf.js')
     }, done).start();

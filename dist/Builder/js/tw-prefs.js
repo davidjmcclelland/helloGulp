@@ -15,7 +15,7 @@ function $getPrefs() {
         updateDocks(data);
         prefWidth = data.userPreferences.toolboxWidth;
     }).fail(function (xhr, status) {
-        console.log("error");
+        console.log("error: " + status);
     }).always(function (xhr, status) {
         // reset things
     });
@@ -41,6 +41,7 @@ function $setPrefs(value) {
         // reset things
     });
 }
+
 let updateDocks = function(data){
     console.log("data.toolboxWidth: " + data.userPreferences.toolboxWidth);
 };

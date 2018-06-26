@@ -8,8 +8,6 @@ var srcDirPath = paths.appRoot + 'Builder'; //src/Builder
 
 // writing up the gulp nunjucks task
 gulp.task('nunjucks', function() {
-  console.log('nunjucking');
-
   // configuring the templates folder for nunjucks
   nunjucksRender.nunjucks.configure(['src/Builder/templates/']);
 
@@ -17,10 +15,6 @@ gulp.task('nunjucks', function() {
   return gulp.src('src/Builder/pages/**/*.+(njk)')
     .pipe(nunjucksRender())
     .pipe(gulp.dest(distDirPath))
-});
-
-gulp.task('watch-nunjucks', () => {
-    gulp.watch('src/Builder/templates/**/*.+(njk)', ['nunjucks'])
 });
 
 gulp.task('watch-nunjucks', () => {
