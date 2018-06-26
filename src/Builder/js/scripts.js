@@ -38,20 +38,36 @@ function enableDocks(data) {
                 // $('.dock').css('width', w2);
             }
         });
-        /*
 
-                $('#dock2').resizable({
-                    helper: "ui-resizable-helper",
-                    containment: "parent",
-                    handles: 'w',
-                    resize: function (event, ui) {
-                        $(this).css('height', '');
-                    },
-                    stop: function (event, ui) {
-                        $(this).css('height', '');
-                    }
-                });
-        */
+        $('#layout').resizable({
+            helper: "ui-resizable-helper",
+            containment: "parent",
+            handles: 's',
+            resize: function (event, ui) {
+                $(this).css('width', '');
+                $(this).css('left', '');
+            },
+            stop: function (event, ui) {
+                $(this).css('width', '');
+                $(this).css('left', '');
+                $(this).css('height', ui.size.height);
+            }
+        });
+
+        $('#dock2').resizable({
+            helper: "ui-resizable-helper",
+            containment: "parent",
+            handles: 'w',
+            resize: function (event, ui) {
+                $(this).css('height', '');
+                $(this).css('left', '');
+            },
+            stop: function (event, ui) {
+                $(this).css('height', '');
+                $(this).css('left', '');
+                $(this).css('width', ui.size.width + $(this).offset().left - event.pageX);
+            }
+        });
 
         // drag/drop support
         $('.dock').show()
@@ -74,7 +90,7 @@ function enableDocks(data) {
 
         // get saved dock width pref
         console.log("prefWidth: " + docks[i].id + ", " + prefWidth);
-        $('#' + docks[i].id).css('width', prefWidth);
+        $('#docks1.id').css('width', prefWidth);
         enableSections(sections);
     }
 }

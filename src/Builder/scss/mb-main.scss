@@ -27,6 +27,10 @@
   flex-flow: column nowrap;
   flex: 1;
 }
+// using flex:1 prevents jquery ui resizing if set on both divs in v stack
+.container.fluid{
+  flex:1;
+}
 #workspace{
   flex:2;
   flex-flow:column;
