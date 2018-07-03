@@ -6,8 +6,13 @@ $shadow: #050;
   min-height: 100vh;
 }
 
-.dock.container {
-  display: none;
+.dock {
+  display: flex;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  align-self: stretch;
+  min-height: 320px;
 }
 
 .loaded-dock {
@@ -16,7 +21,6 @@ $shadow: #050;
 
 .container {
   display: flex;
-  flex-flow: row nowrap;
   border: 1px solid $offWhite;
 }
 .container > div:hover {
@@ -29,19 +33,12 @@ $shadow: #050;
   border: 1px solid $offWhite;
 }
 
-#design {
-  flex-flow: column nowrap;
-  flex: 1;
-}
 // using flex:1 prevents jquery ui resizing if set on both divs in v stack
-.container.fluid{
-  flex:1;
+.fluid {
+  flex: 1 1 auto;
+  align-self: stretch;
 }
-#workspace{
-  flex:2;
-  flex-flow:column;
-  margin-bottom:0;
-}
+
 /* resizable */
 .ui-resizable-helper {
   border: 1px dotted #DC5;
@@ -51,26 +48,6 @@ container > ui-resizable-handle {
 
 }
 
-/*
-flex-basis
-container has a) space left or b) is overfull
-look at a) flex-grow and b) flex-shrink
-calculate portions each item will grow or shrink
-add that to the base size of the item
-
-basis + flex-grow - flex-shrink
-
-.container div {
-    float: right;
-    flex: 1 1 25%;
-    margin: 0;
+#layout {
+  min-height: 640px;
 }
-
-.container div:nth-child(2) {
-    flex-grow: 2;
-}
-
-.container div:nth-child(3) {
-
-}
-*/
