@@ -23,8 +23,21 @@ $shadow: #050;
   display: flex;
   border: 1px solid $offWhite;
 }
+
+.row-container {
+  flex-flow: row nowrap;
+}
+
+.col-container {
+  flex-flow: column nowrap;
+}
+
 .container > div:hover {
   background-color: rgba(255, 255, 255, 0.25);
+}
+
+.title {
+  align-self: stretch;
 }
 
 .tabs {
