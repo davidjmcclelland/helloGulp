@@ -19,6 +19,9 @@ $shadow: #050;
   flex-flow: row nowrap;
   border: 1px solid $offWhite;
 }
+.container > div:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
 
 .tabs {
   display: flex;
@@ -38,6 +41,14 @@ $shadow: #050;
   flex:2;
   flex-flow:column;
   margin-bottom:0;
+}
+/* resizable */
+.ui-resizable-helper {
+  border: 1px dotted #DC5;
+}
+
+container > ui-resizable-handle {
+
 }
 
 /*

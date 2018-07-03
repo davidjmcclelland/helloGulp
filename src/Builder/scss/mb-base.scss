@@ -14,14 +14,6 @@ html {
   font-size: 18px;
 }
 
-.ui-resizable-helper {
-  border: 1px dotted #DC5;
-}
-
-container > ui-resizable-handle {
-
-}
-
 code {
   margin: 1px 5px;
   padding: 2px 5px 1px 5px;
@@ -63,10 +55,6 @@ a:hover {
       /*-ms-flex-pack: justify;*/
           /*justify-content: space-between;*/
   text-align: center;
-}
-
-.container > div:hover {
-  background-color: rgba(255, 255, 255, 0.25);
 }
 
 .full {
