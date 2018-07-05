@@ -6,7 +6,7 @@ $shadow: #050;
   min-height: 100vh;
 }
 
-.container {
+.tw-container {
   display: flex;
   border: 1px solid $offWhite;
 }
@@ -21,6 +21,19 @@ $shadow: #050;
 
 .tw-container > div:hover {
   background-color: rgba(255, 255, 255, 0.25);
+}
+
+.tw-container > * :not(.ui-resizable-handle) {
+  color: $offWhite;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid $offWhite;
+  border-radius: 2px;
+  padding: 20px;
+  margin: 10px;
+  /*-webkit-box-pack: justify;*/
+  /*-ms-flex-pack: justify;*/
+  /*justify-content: space-between;*/
+  text-align: center;
 }
 
 .dock {
@@ -57,7 +70,7 @@ $shadow: #050;
   border: 1px dotted #DC5;
 }
 
-container > ui-resizable-handle {
+tw-container > ui-resizable-handle {
 
 }
 

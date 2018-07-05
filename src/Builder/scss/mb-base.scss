@@ -44,19 +44,6 @@ a:hover {
   margin-bottom: 50px;
 }
 
-.container > * :not(.ui-resizable-handle) {
-  color: $offWhite;
-  background-color: rgba(255, 255, 255, 0.15);
-  border: 1px solid $offWhite;
-  border-radius: 2px;
-  padding: 20px;
-  margin: 10px;
-  /*-webkit-box-pack: justify;*/
-      /*-ms-flex-pack: justify;*/
-          /*justify-content: space-between;*/
-  text-align: center;
-}
-
 .full {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 100%;
