@@ -71,7 +71,6 @@ function enableDocks(data) {
 
         // drag/drop support
         $('.dock').show()
-            .switchClass('dock', 'loaded-dock', 500)
             .droppable({
                 accept: '.section', hoverClass: 'dragging', tolerance: "touch",
 
