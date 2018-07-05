@@ -6,6 +6,23 @@ $shadow: #050;
   min-height: 100vh;
 }
 
+.container {
+  display: flex;
+  border: 1px solid $offWhite;
+}
+
+.container-row {
+  flex-flow: row nowrap;
+}
+
+.container-col {
+  flex-flow: column nowrap;
+}
+
+.container > div:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
 .dock {
   display: flex;
   justify-content: flex-start;
@@ -17,23 +34,6 @@ $shadow: #050;
 
 .loaded-dock {
   display: flex;
-}
-
-.container {
-  display: flex;
-  border: 1px solid $offWhite;
-}
-
-.row-container {
-  flex-flow: row nowrap;
-}
-
-.col-container {
-  flex-flow: column nowrap;
-}
-
-.container > div:hover {
-  background-color: rgba(255, 255, 255, 0.25);
 }
 
 .title {
