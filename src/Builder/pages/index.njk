@@ -12,7 +12,71 @@
         <!-- widgets, layout, mashups -->
 
         <!-- design view, connection viewer -->
-        <div class="section" id="layout">layout</div>
+        <div class="section" id="layout">
+        <!--**************mashup wysiwig workspace pane *************-->
+        <div id="mashup-ide-workspace-pane" class="unselectable" onselectstart="return false;">
+            <div id="mashup-toolbar2" class="">
+                <div class="btn-group row-wrap">
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_cut"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.cut"><i class="twicon-Cut"></i></button>
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_copy"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.copy"><i class="twicon-duplicate"></i></button>
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_paste"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.paste"><i class="twicon-Paste"></i></button>
+                </div>
+                <div class="btn-group row-wrap">
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_align_lefts"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.align-lefts"><i class="twicon-AlignLeft"></i></button>
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_align_centers"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.align-centers"><i class="twicon-AlignCenter"></i></button>
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_align_rights"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.align-rights"><i class="twicon-AlignRight"></i></button>
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_align_tops"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.align-tops"><i class="twicon-AlignTop"></i></button>
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_align_middles"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.align-middles"><i class="twicon-AlignMiddle"></i></button>
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_align_bottoms"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.align-bottoms"><i class="twicon-AlignBottom"></i></button>
+                </div>
+                <div class="btn-group row-wrap">
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_make_same_width"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.make-same-width"><i class="twicon-SameWidth"></i></button>
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_make_same_height"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.make-same-height"><i class="twicon-SameHeight"></i></button>
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_make_same_size"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.make-same-size"><i class="twicon-SameSize"></i></button>
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_expand_to_container"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.expand-to-container"><i class="twicon-Expand"></i></button>
+                </div>
+                <div class="btn-group row-wrap">
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_even_vertical_spacing"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.even-vertical-spacing"><i
+                                class="twicon-EvenVerticalSpacing"></i></button>
+                    <button type="button" class="btn btn-mini" cmd="nonTabCmd/MashupHandler/selection_even_horizontal_spacing"
+                            data-i18n="[title]tw.mashup-builder.editor.buttons.even-horizontal-spacing"><i
+                                class="twicon-EvenHorizontalSpacing"></i></button>
+                </div>
+                <div id="mashup-toolbar-resolution" class="row-wrap"><span data-i18n="tw.mashup-builder.editor.preview.preview-label"></span>
+                    <select class="resolution-picker">
+                        <option class="resolution-option" width="100%" height="100%" margin="" value="fit"
+                                data-i18n="tw.mashup-builder.editor.preview.available-space"></option>
+                        <option class="resolution-option" width="1024px" height="768px" margin="0 auto">1024x768</option>
+                        <option class="resolution-option" width="1280px" height="1024px" margin="0 auto">1280x1024</option>
+                        <option class="resolution-option" width="1366px" height="768px" margin="0 auto">1366x768</option>
+                        <option class="resolution-option" width="1024px" height="768px" margin="0 auto"
+                                data-i18n="tw.mashup-builder.editor.preview.ipad-landscape"></option>
+                        <option class="resolution-option" width="768px" height="1024px" margin="0 auto"
+                                data-i18n="tw.mashup-builder.editor.preview.ipad-portrait"></option>
+                        <!--<option>Custom</option>-->
+                    </select>
+                </div>
+                <div id="mashup-language-chooser" class="row-wrap">
+                    <select class="language-picker"></select>
+                </div>
+            </div>
+            <div id="workspace" class=""></div>
+        </div>
+        </div>
 
         <div class="fluid section" id="connections"> connections</div>
     </div>

@@ -26,7 +26,7 @@ $shadow: #050;
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-.tw-container > * :not(.ui-resizable-handle) {
+.tw-container > * :not(.ui-resizable-handle):not(.btn):not(.btn-group):not(.twicon-*) {
   color: $offWhite;
   background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid $offWhite;
@@ -108,4 +108,21 @@ $shadow: #050;
   font-size: 18px;
   /*left:0;
   position:absolute;*/
+}
+
+// gray area behind mashup window
+#mashup-ide-workspace-pane {
+  background-color: #d6d6d6;
+  width: 100%;
+  height: calc(100% - 20px);
+  //overflow: visible ;
+}
+
+#mashup-toolbar2{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:100%;
 }

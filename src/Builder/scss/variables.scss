@@ -1,0 +1,103 @@
+$zindexBase:					10;
+$zindexFixedNavbar:       		149;
+$zindexTabs:       				102;
+$tabdropdown:			  		2006;
+$zindexHeader:			  		2007;
+$zindexInlineSearch:			2008;
+$zindexHeaderPopup:				2002;
+$zindexFullScreen:		  		2003;
+$zindexModalBackdrop:     		2008;
+$zindexModal:             		2009;
+$zindexModelessBackdrop:		2004;
+$zindexModeless:				2005;
+$zindexMashup:			  		104;
+$zindexMashupModalBackdrop:     118;
+$zindexMashupModal:             119;
+$zindexMashupDialog:			120;
+$zindexPopover:           		3010;
+$zindexMagicPicker:				3011;
+$zindexDropdown:          		2009;
+$zindexAdvancedFilter:          3010;
+$zindexMagicPickerAdvanced:		3013;
+$zindexChildMagicPicker:        3020;
+$zindexInspect:					3021;
+$zindexTooltip:           		3021;
+$zindexDragHelper:              2012;
+
+$logo:					url(../images/logo-big.png) no-repeat left center;
+$baseFontSize:          12px;
+$baseLineHeight:        18px;
+
+$smallFontSize:         10px;
+$smallFontLineHeight:   14px;
+$sectionFontSize:       14px;
+$sectionLineHeight:     40px;
+$headerFontSize:        18px;
+$headerLineHeight:      40px;
+$lightBlue:             #e5ecf4;
+$twGrayBorder:			#ddd;
+$editing:               #eff8ff;
+$editingText:           #004490;
+$editingBorder:         #003380;
+
+$nonInheritedTitleLightGray:    #373737;
+$nonInheritedTitleDarkGray:     #5f5f5f;
+$InheritedTitleLightGray:       #858585;
+$InheritedTitleDarkGray:        #b1b1b1;
+
+$headerOffset: 35px;
+
+$btnRadioSelectedBackground:                 #a6a6a6;
+$btnRadioSelectedBackgroundHighlight:        #bbbbbb;
+
+$explorerTableHover:            #ddeefd;
+
+// Wells
+// -------------------------
+$wellWhiteBackground:                   #fff;
+$wellWhiteBackgroundBorder:             #e1e1e1;
+
+.border-box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* Firefox */
+  -webkit-box-sizing: border-box; /* Safari */
+}
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #a6a6a6;
+  border: 1px solid darken(#a6a6a6, 7%);
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+// Buttons
+// -------------------------
+$btnBackground:                     #FFF;
+$btnBackgroundHighlight:            darken(#FFF, 10%);
+$btnBorder:                         #bbb;
+
+$btnPrimaryBackground:              #FFF;
+$btnPrimaryBackgroundHighlight:     #DDD;
+
+$btnInfoBackground:                 #5bc0de;
+$btnInfoBackgroundHighlight:        #2f96b4;
+
+$btnSuccessBackground:              #62c462;
+$btnSuccessBackgroundHighlight:     #51a351;
+
+$btnWarningBackground:              #FF3333;
+$btnWarningBackgroundHighlight:     #FF1111;
+
+$btnDangerBackground:               #ee5f5b;
+$btnDangerBackgroundHighlight:      #bd362f;
+
+$btnInverseBackground:              #444;
+$btnInverseBackgroundHighlight:     #222222;
+
+$btnLightGrayBackground:              #cacaca;
+$btnLightGrayBackgroundHighlight:     #aaaaaa;
+
+$btnGrayBackground:              #aaa;
+$btnGrayBackgroundHighlight:     #878787;
+

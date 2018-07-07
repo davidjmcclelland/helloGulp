@@ -1,0 +1,885 @@
+[class^="twicon-"], [class*=" twicon-"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  margin-top: -1px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+[class^="data-type-"], [class*=" data-type-"] {
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+[class^="twicon-large-"], [class*=" twicon-large-"] {
+  height: 32px;
+  line-height: 32px;
+  width: 32px;
+}
+span[base-type] {
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+}
+.twicon-ExportSourceControlEntities, .twicon-ImportSourceControlEntities {
+  background-image: url(../images/mashup/cmd/server--arrow.png);
+}
+.twicon-setvalue {
+  background-image: url(@../images/ui-text-field-medium.png);
+}
+.twicon-checkMark {
+  background-image: url(@../images/tick-button.png);
+}
+.twicon-fullscreen {
+  background-image: url(@../images/projection-screen--plus.png);
+}
+.twicon-exitfullscreen {
+  background-image: url(@../images/projection-screen--minus.png);
+}
+.twicon-async-service {
+  background-image: url(@../images/arrow-switch.png);
+}
+.twicon-deletestate {
+  background-image: url(@../images/thermometer--minus.png);
+}
+.twicon-addstate {
+  background-image: url(@../images/thermometer--plus.png);
+}
+.twicon-StatesInformation {
+  background-image: url(@../images/thermometer--exclamation.png);
+}
+.twicon-advanced {
+  background-image: url(@../images/switch.png);
+}
+.twicon-alphabetical {
+  background-image: url(@../images/sort-alphabet.png);
+}
+.twicon-bindings {
+  background-image: url(@../images/arrow-split.png);
+}
+.twicon-configuration {
+  background-image: url(@../images/gear.png);
+}
+.twicon-contentcrawler {
+  background-image: url(@../images/bug.png);
+}
+.twicon-delete {
+  background-image: url(@../images/cross.png);
+}
+.twicon-duplicate {
+  background-image: url(@../images/document-copy.png);
+}
+.twicon-edit {
+  background-image: url(@../images/pencil.png);
+}
+.twicon-importexport {
+  background-image: url(@../images/import-export.png);
+}
+.twicon-insert {
+  background-image: url(@../images/navigation-000-button.png);
+}
+.twicon-EntityDependsOn {
+  background-image: url(@../images/node-select-child.png);
+}
+.twicon-UsesThisEntity {
+  background-image: url(@../images/node-select.png);
+}
+.twicon-globe {
+  background-image: url(@../images/globe.png);
+}
+.twicon-help {
+  background-image: url(@../images/lifebuoy.png);
+}
+.twicon-home {
+  background-image: url(@../images/home.png);
+}
+.twicon-master {
+  background-image: url(../images/baseTypes/target.png);
+}
+.twicon-gadget {
+  background-image: url(../images/baseTypes/gadget.png);
+}
+.twicon-dashboard {
+  background-image: url(@../images/dashboard.png);
+}
+.twicon-DashboardPreview {
+  background-image: url(@../images/dashboard.png);
+}
+.twicon-MashupPreview {
+  background-image: url(@../images/application-sub.png);
+}
+.twicon-MenuDefinition {
+  background-image: url(@../images/ui-list-box-blue.png);
+}
+.twicon-modified {
+  background-image: url(@../images/hourglass-pencil.png);
+}
+.twicon-monitoring {
+  background-image: url(@../images/toolbox.png);
+}
+.twicon-learning-connector {
+  background-image: url(@../images/ptcu-graduation-cap-16x16.png);
+}
+.twicon-next-gen-composer {
+  background-image: url(@../images/logo-icon.png);
+}
+.twicon-new {
+  background-image: url(@../images/plus.png);
+}
+.twicon-permissions {
+  background-image: url(@../images/lock-pencil.png);
+}
+.twicon-permissions-designtime, .twicon-DesignTime {
+  background-image: url(@../images/lock-design.png);
+}
+.twicon-DesignTimeInstance {
+  background-image: url(@../images/lock-design-instance.png);
+}
+.twicon-permissions-runtime, .twicon-RunTime {
+  background-image: url(@../images/lock-runtime.png);
+}
+.twicon-RunTimeInstance {
+  background-image: url(@../images/lock-runtime-instance.png);
+}
+.twicon-Property-Reflection {
+  background-image: url(@../images/scripts.png);
+}
+.twicon-Property-Script {
+  background-image: url(@../images/script-code.png);
+}
+.twicon-Property-SQLQuery {
+  background-image: url(@../images/database-sql.png);
+}
+.twicon-Property-SQLCommand {
+  background-image: url(@../images/sql-command.png);
+}
+.twicon-refresh {
+  background-image: url(@../images/arrow-circle-315.png);
+}
+.twicon-SharedConfiguration {
+  background-image: url(@../images/tables-relation.png);
+}
+.twicon-ThingworxMarketplace {
+  background-image: url(@../images/categories.png);
+}
+.twicon-view {
+  background-image: url(@../images/magnifier-zoom.png);
+}
+.twicon-large-configuration {
+  background-image: url(@../images/large-configuration.png);
+}
+.twicon-large-network {
+  background-image: url(@../images/large-network.png);
+}
+.twicon-large-organization {
+  background-image: url(@../images/large-node.png);
+}
+.twicon-large-permissions-designtime {
+  background-image: url(@../images/large-lock-design.png);
+}
+.twicon-large-permissions-runtime {
+  background-image: url(@../images/large-lock-runtime.png);
+}
+.twicon-large-shared-configuration {
+  background-image: url(@../images/large-tables-relation.png);
+}
+.twicon-large-styledefinition {
+  background-image: url(@../images/large-palette.png);
+}
+.twicon-collectionpermission, span[entity-type="CollectionPermissions"] {
+  background-image: url(@../images/lock.png);
+}
+.twicon-CaretDown {
+  background-image: url(../images/UI/downcaret.png);
+}
+.twicon-CaretRight {
+  background-image: url(../images/UI/rightcaret.png);
+}
+.twicon-SetValue {
+  background-image: url(../images/UI/setvalue.png);
+}
+.twicon-DirtyFlag {
+  background-image: url(../images/UI/dirtyflag.png);
+}
+.twicon-CloseTab {
+  background-image: url(../images/UI/closetab.png);
+}
+.twicon-Persistent {
+  background-image: url(../images/UI/persistent.png);
+}
+.twicon-Logged {
+  background-image: url(../images/UI/logged.png);
+}
+.twicon-ReadOnly {
+  background-image: url(../images/UI/readonly.png);
+}
+.twicon-RightArrow {
+  background-image: url(../images/UI/right-arrow.png);
+}
+.twicon-LeftArrow {
+  background-image: url(../images/UI/left-arrow.png);
+}
+.twicon-Override {
+  background-image: url(../images/UI/override.png);
+}
+.twicon-ChangeOverride {
+  background-image: url(../images/UI/change-override.png);
+}
+.twicon-MagicPicker {
+  background-image: url(../images/UI/magicpicker.png);
+}
+.twicon-Inspect {
+  background-image: url(../images/UI/inspect.png);
+}
+.twicon-DataChange {
+  background-image: url(../images/UI/datachange.png);
+}
+.twicon-Threshold {
+  background-image: url(../images/UI/threshold.png);
+}
+.twicon-SaveComment {
+  background-image: url(../images/UI/save-comment.png);
+}
+.twicon-PrimaryKey {
+  background-image: url(../images/UI/primarykey.png);
+}
+.twicon-Warning {
+  background-image: url(../images/UI/warning.png);
+}
+.twicon-Draggable {
+  background-image: url(../images/UI/draggable.png);
+}
+.twicon-Bound {
+  background-image: url(../images/UI/bound.png);
+}
+.twicon-Unbound {
+  background-image: url(../images/UI/unbound.png);
+}
+.twicon-ClearBinding {
+  background-image: url(../images/UI/clear-binding.png);
+}
+.twicon-ImportFile {
+  background-image: url(../images/UI/importfile.png);
+}
+.twicon-ImportThingworxStorage {
+  background-image: url(../images/UI/importtwstorage.png);
+}
+.twicon-ExportFile {
+  background-image: url(../images/UI/exportfile.png);
+}
+.twicon-ExportThingworxStorage {
+  background-image: url(../images/UI/exporttwstorage.png);
+}
+.twicon-ImportExtensions {
+  background-image: url(../images/UI/importextension.png);
+}
+.twicon-ManageExtensions {
+  background-image: url(../images/UI/manageextension.png);
+}
+.twicon-tabDropdown {
+  background-image: url(../images/UI/tab-dropdown.png);
+}
+.twicon-Property-Bound {
+  background-image: url(../images/UI/bound.png);
+}
+.twicon-Property-Remote {
+  background-image: url(../images/UI/remote.png);
+}
+.twicon-Property-Local {
+  background-image: url(../images/UI/local.png);
+}
+.twicon-ReadPermission {
+  background-image: url(../images/UI/readpermissions.png);
+}
+.twicon-UpdatePermission {
+  background-image: url(../images/UI/updatepermissions.png);
+}
+.twicon-DeletePermission {
+  background-image: url(../images/UI/deletepermissions.png);
+}
+.twicon-Allow {
+  background-image: url(../images/UI/allow.png);
+}
+.twicon-Deny {
+  background-image: url(../images/UI/deny.png);
+}
+.twicon-UseInherited {
+  background-image: url(../images/UI/useinherited.png);
+}
+span[entity-type="ExtensionPackages"] {
+  background:url(../images/baseTypes/extensionpackage.png) no-repeat left center;
+}
+span[entity-type="ScriptFunctionLibraries"] {
+  background:url(../images/baseTypes/script.png) no-repeat left center;
+}
+span[entity-type="ThingPackages"] {
+  background:url(../images/baseTypes/thingpackage.png) no-repeat left center;
+}
+span[entity-type="Widgets"] {
+  background:url(../images/baseTypes/widget.png) no-repeat left center;
+}
+.twicon-modeltag, span[entity-type="ModelTags"], .twicon-modeltagvocabulary {
+  background-image: url(../images/baseTypes/modeltags.png);
+}
+.twicon-stream {
+  background-image: url(../images/baseTypes/stream.png);
+}
+.twicon-integConnector {
+  background-image: url(../images/baseTypes/integconnectors.png);
+}
+.twicon-valuestream {
+  background-image: url(../images/baseTypes/valuestream.png);
+}
+.twicon-datatag, .twicon-datatagvocabulary, span[entity-type="DataTags"] {
+  background-image: url(../images/baseTypes/datatags.png);
+}
+.twicon-blog {
+  background-image: url(../images/baseTypes/blog.png);
+}
+.twicon-project {
+  background-image: url(../images/baseTypes/project.png);
+}
+.twicon-wiki {
+  background-image: url(../images/baseTypes/wiki.png);
+}
+.twicon-menu, span[entity-type="Menus"] {
+  background-image: url(../images/baseTypes/menu.png);
+}
+.twicon-mediaentity, span[entity-type="MediaEntities"] {
+  background-image: url(../images/baseTypes/mediaentity.png);
+}
+.twicon-group, span[entity-type="Groups"] {
+  background-image: url(../images/baseTypes/group.png);
+}
+.twicon-applicationkey, span[entity-type="ApplicationKeys"] {
+  background-image: url(../images/baseTypes/appkey.png);
+}
+.twicon-organization, .twicon-Organization, span[entity-type="Organizations"] {
+  background-image: url(../images/baseTypes/organization.png);
+}
+.twicon-localizationtable, .twicon-LocalizationTable, span[entity-type="LocalizationTable"], span[entity-type="LocalizationTables"] {
+  background-image: url(../images/baseTypes/localizationtable.png);
+}
+.twicon-subsystem, .twicon-Subsystem, span[entity-type="Subsystems"] {
+  background-image: url(../images/baseTypes/subsystems.png);
+}
+.twicon-directoryservice, .twicon-DirectoryService, span[entity-type="DirectoryService"] {
+  background-image: url(../images/baseTypes/directoryservice.png);
+}
+.twicon-authenticator, .twicon-Authenticator, span[entity-type="Authenticator"] {
+  background-image: url(../images/baseTypes/authenticator.png);
+}
+.twicon-persistenceprovider, .twicon-PERSISTENCEPROVIDERNAME, [base-type="PERSISTENCEPROVIDERNAME"], .base-type-PERSISTENCEPROVIDERNAME, .twicon-PersistenceProvider, span[entity-type="PersistenceProvider"] {
+  background-image: url(../images/baseTypes/persistenceprovider.png);
+}
+.twicon-persistenceproviderpackage, .twicon-PersistenceProviderPackage, span[entity-type="PersistenceProviderPackage"], span[entity-type="PersistenceProviderPackages"] {
+  background-image: url(../images/baseTypes/persistenceproviderpackage.png);
+}
+.twicon-Visibility, .twicon-visibility {
+  background-image: url(../images/baseTypes/visibility.png);
+}
+.twicon-visibilitypermission, .twicon-VisibilityPermission {
+  background-image: url(@../images/lock-visibility.png);
+}
+.twicon-VisibilityInstance {
+  background-image: url(../images/categoryIcons/visibilityinstancepermission.png);
+}
+.twicon-subsystem-start {
+  background-image: url(@../images/control.png);
+}
+.twicon-subsystem-stop {
+  background-image: url(@../images/control-stop-square.png);
+}
+.twicon-subsystem-restart {
+  background-image: url(@../images/control-power.png);
+}
+.twicon-edit-override{
+  background-image: url(@../images/edit-service-override.png);
+}
+.twicon-clear-override{
+  background-image: url(@../images/cross.png);
+}
+[base-type] {
+  background-repeat: no-repeat;
+}
+[base-type="ANYSCALAR"], .base-type-ANYSCALAR, .twicon-ANYSCALAR, .data-type-ANYSCALAR {
+  background-image: url(../images/baseTypes/anyscalar.png);
+}
+[base-type="BASETYPENAME"], .base-type-BASETYPENAME, .twicon-BASETYPENAME, .data-type-BASETYPENAME {
+  background-image: url(@../images/highlighter-text.png);
+}
+[base-type="BLOB"], .base-type-BLOB, .twicon-BLOB, .data-type-BLOB {
+  background-image: url(../images/baseTypes/blob.png);
+}
+[base-type="BOOLEAN"], .base-type-BOOLEAN, .twicon-BOOLEAN, .data-type-BOOLEAN {
+  background-image: url(../images/baseTypes/boolean.png);
+}
+[base-type="CHANNEL"], .base-type-CHANNEL, .twicon-CHANNEL, .data-type-CHANNEL, .twicon-channel, span[entity-type="Channels"] {
+  background-image: url(../images/baseTypes/channel.png);
+}
+[base-type="CLOCK"], .base-type-CLOCK, .twicon-CLOCK, .data-type-CLOCK {
+  background-image: url(../images/baseTypes/Clock.png);
+}
+[base-type="CLOCKCERTIFICATE"], .base-type-CLOCKCERTIFICATE, .twicon-CLOCKCERTIFICATE, .data-type-CLOCKCERTIFICATE {
+  background-image: url(../images/baseTypes/ClockCertificate.png);
+}
+[base-type="DATABASEOBJECTS"], .base-type-DATABASEOBJECTS, .twicon-DATABASEOBJECTS, .data-type-DATABASEOBJECTS {
+  background-image: url(../images/baseTypes/DatabaseObjects.png);
+}
+[base-type="DASHBOARD"], .base-type-DASHBOARD, .twicon-DASHBOARD, .data-type-DASHBOARD, .twicon-dashboard, span[entity-type="Dashboards"] {
+  background-image: url(../images/baseTypes/dashboard.png);
+}
+[base-type="DASHBOARDNAME"], .base-type-DASHBOARDNAME, .twicon-DASHBOARDNAME, .data-type-DASHBOARDNAME {
+  background-image: url(../images/baseTypes/dashboardname.png);
+}
+[base-type="DATAANALYSISDEFINITION"], .base-type-DATAANALYSISDEFINITION, .twicon-DATAANALYSISDEFINITION, .data-type-DATAANALYSISDEFINITION, .twicon-dataanalysisdefinition, span[entity-type="DataAnalysisDefinition"] {
+  background-image: url(../images/baseTypes/dataanalysisdefinition.png);
+}
+[base-type="DATASHAPE"], .base-type-DATASHAPE, .twicon-DATASHAPE, .data-type-DATASHAPE, .twicon-datashape, span[entity-type="DataShapes"] {
+  background-image: url(../images/baseTypes/datashape.png);
+}
+[base-type="PERSISTENCEPROVIDER"], .base-type-PERSISTENCEPROVIDER, .twicon-PERSISTENCEPROVIDER, .data-type-PERSISTENCEPROVIDER, .twicon-persistenceprovider, span[entity-type="PersistenceProviders"] {
+  background-image: url(../images/baseTypes/persistenceprovider.png);
+}
+[base-type="DATASHAPENAME"], .base-type-DATASHAPENAME, .twicon-DATASHAPENAME, .data-type-DATASHAPENAME {
+  background-image: url(../images/baseTypes/datashapename.png);
+}
+[base-type="DATETIME"], .base-type-DATETIME, .twicon-DATETIME, .data-type-DATETIME {
+  background-image: url(../images/baseTypes/datetime.png);
+}
+[base-type="ENTITYNAME"], [base-type="entityname"], .base-type-ENTITYNAME, .twicon-ENTITYNAME, .data-type-ENTITYNAME, [entity-type="entityname"] {
+  background-image: url(../images/baseTypes/entityname.png);
+}
+[base-type="FIELDNAME"], .base-type-FIELDNAME, .twicon-FIELDNAME, .data-type-FIELDNAME {
+  background-image: url(../images/baseTypes/fieldname.png);
+}
+[base-type="GROUPNAME"], .base-type-GROUPNAME, .twicon-GROUPNAME, .data-type-GROUPNAME {
+  background-image: url(../images/baseTypes/groupname.png);
+}
+[base-type="GUID"], .twicon-GUID, .data-type-GUID {
+  background-image: url(../images/baseTypes/GUID.png);
+}
+[base-type="HELMET"], .base-type-HELMET, .twicon-HELMET, .data-type-HELMET {
+  background-image: url(../images/baseTypes/Helmet.png);
+}
+[base-type="HTML"], .base-type-HTML, .twicon-HTML, .data-type-HTML {
+  background-image: url(../images/baseTypes/HTML.png);
+}
+[base-type="HYPERLINK"], .base-type-HYPERLINK, .twicon-HYPERLINK, .data-type-HYPERLINK {
+  background-image: url(../images/baseTypes/hyperlink.png);
+}
+[base-type="IMAGE"], .base-type-IMAGE, .twicon-IMAGE, .data-type-IMAGE {
+  background-image: url(../images/baseTypes/image.png);
+}
+[base-type="IMAGELINK"], .base-type-IMAGELINK, .twicon-IMAGELINK, .data-type-IMAGELINK {
+  background-image: url(../images/baseTypes/imagelink.png);
+}
+[base-type="INFOTABLE"], .base-type-INFOTABLE, .twicon-INFOTABLE, .data-type-INFOTABLE {
+  background-image: url(../images/baseTypes/infotable.png);
+}
+[base-type="JSON"], .base-type-JSON, .twicon-JSON, .data-type-JSON {
+  background-image: url(../images/baseTypes/json.png);
+}
+[base-type="LOCATION"], .base-type-LOCATION, .twicon-LOCATION, .data-type-LOCATION {
+  background-image: url(../images/baseTypes/location.png);
+}
+[base-type="MASHUP"], .base-type-MASHUP, .twicon-MASHUP, .data-type-MASHUP, .twicon-mashup, span[entity-type="Mashups"] {
+  background-image: url(../images/baseTypes/mashup.png);
+}
+[base-type="MASHUPNAME"], .base-type-MASHUPNAME, .twicon-MASHUPNAME, .data-type-MASHUPNAME {
+  background-image: url(../images/baseTypes/mashupname.png);
+}
+[base-type="MENUNAME"], .base-type-MENUNAME, .twicon-MENUNAME, .data-type-MENUNAME {
+  background-image: url(@../images/ui-menu-blue.png);
+}
+[base-type="NOTHING"], .base-type-NOTHING, .twicon-NOTHING, .data-type-NOTHING {
+  background-image: url(../images/baseTypes/nothing.png);
+}
+[base-type="NOTIFICATIONCONTENTNAME"], .base-type-NOTIFICATIONCONTENTNAME, .twicon-NOTIFICATIONCONTENTNAME, .data-type-NOTIFICATIONCONTENTNAME {
+  background-image: url(../images/baseTypes/notification-type-icon.png);
+}
+[base-type="NOTIFICATIONDEFINITIONNAME"], .base-type-NOTIFICATIONDEFINITIONNAME, .twicon-NOTIFICATIONDEFINITIONNAME, .data-type-NOTIFICATIONDEFINITIONNAME {
+  background-image: url(../images/baseTypes/notification-definition-icon.png);
+}
+[base-type="NUMBER"], .base-type-NUMBER, .twicon-NUMBER, .data-type-NUMBER {
+  background-image: url(../images/baseTypes/number.png);
+}
+[base-type="INTEGER"], .base-type-INTEGER, .twicon-INTEGER, .data-type-INTEGER {
+  background-image: url(../images/baseTypes/integer.png);
+}
+[base-type="LONG"], .base-type-LONG, .twicon-LONG, .data-type-LONG {
+  background-image: url(../images/baseTypes/long.png);
+}
+[base-type="OBJECTS"], .base-type-OBJECTS, .twicon-OBJECTS, .data-type-OBJECTS {
+  background-image: url(../images/baseTypes/Objects.png);
+}
+[base-type="PASSWORD"], .base-type-PASSWORD, .twicon-PASSWORD, .data-type-PASSWORD {
+  background-image: url(../images/baseTypes/password.png);
+}
+[base-type="PHOTOGRAPH"], .base-type-PHOTOGRAPH, .twicon-PHOTOGRAPH, .data-type-PHOTOGRAPH {
+  background-image: url(../images/baseTypes/Photograph.png);
+}
+[base-type="PROJECT"], .base-type-PROJECT, .twicon-PROJECT, .data-type-PROJECT, .twicon-project, span[entity-type="Projects"] {
+  background-image: url(../images/baseTypes/project.png);
+}
+[base-type="PROJECTNAME"], .base-type-PROJECTNAME, .twicon-PROJECTNAME, .data-type-PROJECTNAME, .twicon-project, span[entity-type="Projects"] {
+  background-image: url(../images/baseTypes/project.png);
+}
+[base-type="RENDERERWITHSTATE"], .base-type-RENDERERWITHSTATE, .twicon-RENDERERWITHSTATE, .data-type-RENDERERWITHSTATE {
+  background-image: url(../images/baseTypes/rendererwithstate.png);
+}
+[base-type="SCHEDULE"], .base-type-SCHEDULE, .twicon-SCHEDULE, .data-type-SCHEDULE {
+  background-image: url(../images/baseTypes/schedule.png);
+}
+[base-type="STATEDEFINITION"], .base-type-STATEDEFINITION, .twicon-STATEDEFINITION, .data-type-STATEDEFINITION, .twicon-statedefinition, span[entity-type="StateDefinitions"] {
+  background-image: url(../images/baseTypes/statedefinition.png);
+}
+[base-type="STATEFORMATTER"], .base-type-STATEFORMATTER, .twicon-STATEFORMATTER, .data-type-STATEFORMATTER, [base-type="STATEFORMATTING"], .base-type-STATEFORMATTING, .twicon-STATEFORMATTING, .data-type-STATEFORMATTING {
+  background-image: url(../images/baseTypes/StateFormatter.png);
+}
+[base-type="STRING"], .base-type-STRING, .twicon-STRING, .data-type-STRING {
+  background-image: url(../images/baseTypes/string.png);
+}
+[base-type="STYLEDEFINITION"], .base-type-STYLEDEFINITION, .twicon-STYLEDEFINITION, .data-type-STYLEDEFINITION, .twicon-styledefinition, span[entity-type="StyleDefinitions"] {
+  background-image: url(../images/baseTypes/styledefinition.png);
+}
+[base-type="TABLE"], .base-type-TABLE, .twicon-TABLE, .data-type-TABLE, .twicon-datatable {
+  background-image: url(../images/baseTypes/Table.png);
+}
+[base-type="TAGS"], .base-type-TAGS, .twicon-TAGS, .data-type-TAGS {
+  background-image: url(../images/baseTypes/Tag.png);
+}
+[base-type="TARGETNAME"], .base-type-TARGETNAME, .twicon-TARGETNAME, .data-type-TARGETNAME {
+  background-image: url(../images/baseTypes/target.png);
+}
+[base-type="TEXT"], .base-type-TEXT, .twicon-TEXT, .data-type-TEXT {
+  background-image: url(../images/baseTypes/text.png);
+}
+[base-type="THING"], .base-type-THING, .twicon-THING, .data-type-THING, .twicon-thing, span[entity-type="Things"] {
+  background-image: url(../images/baseTypes/thing.png);
+}
+[base-type="THINGCODE"], .base-type-THINGCODE, .twicon-THINGCODE, .data-type-THINGCODE {
+  background-image: url(../images/baseTypes/thingcode.png);
+}
+[base-type="THINGTEMPLATE"], .base-type-THINGTEMPLATE, .twicon-THINGTEMPLATE, .data-type-THINGTEMPLATE, .twicon-thingtemplate, span[entity-type="ThingTemplates"] {
+  background-image: url(../images/baseTypes/thingtemplate.png);
+}
+[base-type="THINGNAME"], .base-type-THINGNAME, .twicon-THINGNAME, .data-type-THINGNAME {
+  background-image: url(../images/baseTypes/thingname.png);
+}
+[base-type="THINGLINK"], .base-type-THINGLINK, .twicon-THINGLINK, .data-type-THINGLINK {
+  background-image: url(../images/baseTypes/thinglink.png);
+}
+[base-type="THINGSHAPE"], .base-type-THINGSHAPE, .twicon-THINGSHAPE, .data-type-THINGSHAPE, .twicon-thingshape, span[entity-type="ThingShapes"] {
+  background-image: url(../images/baseTypes/ThingShape.png);
+}
+[base-type="THINGSHAPENAME"], .base-type-THINGSHAPENAME, .twicon-THINGSHAPENAME, .data-type-THINGSHAPENAME {
+  background-image: url(../images/baseTypes/thingshapename.png);
+}
+[base-type="THINGTEMPLATENAME"], .base-type-THINGTEMPLATENAME, .twicon-THINGTEMPLATENAME, .data-type-THINGTEMPLATENAME {
+  background-image: url(../images/baseTypes/thingtemplate.png);
+}
+[base-type="TIMESPAN"], .base-type-TIMESPAN, .twicon-TIMESPAN, .data-type-TIMESPAN {
+  background-image: url(../images/baseTypes/timespan.png);
+}
+[base-type="USER"], .base-type-USER, .twicon-USER, .data-type-USER, .twicon-user, span[entity-type="Users"] {
+  background-image: url(../images/baseTypes/user.png);
+}
+[base-type="USERNAME"], .base-type-USERNAME, .twicon-USERNAME, .data-type-USERNAME {
+  background-image: url(../images/baseTypes/username.png);
+}
+[base-type="NETWORKNAME"] {
+  background-image: url(../images/baseTypes/network.png);
+}
+[base-type="VALUES"], .base-type-VALUES, .twicon-VALUES, .data-type-VALUES {
+  background-image: url(../images/baseTypes/values.png);
+}
+[base-type="VARIANT"], .base-type-VARIANT, .twicon-VARIANT, .data-type-VARIANT {
+  background-image: url(@../images/ui-tooltip--pencil.png);
+}
+[base-type="VEC2"], .base-type-VEC2, .twicon-VEC2, .data-type-VEC2 {
+  background-image: url(../images/baseTypes/vec2.png);
+}
+[base-type="VEC3"], .base-type-VEC3, .twicon-VEC3, .data-type-VEC3 {
+  background-image: url(../images/baseTypes/vec3.png);
+}
+[base-type="VEC4"], .base-type-VEC4, .twicon-VEC4, .data-type-VEC4 {
+  background-image: url(../images/baseTypes/vec4.png);
+}
+[base-type="VOCABULARYNAME"], .base-type-VOCABULARYNAME, .twicon-VOCABULARYNAME, .data-type-VOCABULARYNAME {
+  background-image: url(../images/baseTypes/vocabularyname.png);
+}
+[base-type="XML"], .base-type-XML, .twicon-XML, .data-type-XML {
+  background-image: url(../images/baseTypes/XML.png);
+}
+[base-type="QUERY"], .base-type-QUERY, .twicon-QUERY, .data-type-QUERY {
+  background-image: url(../images/baseTypes/query.png);
+}
+.twicon-localizationtoken, .twicon-LocalizationToken, span[entity-type="LocalizationToken"] {
+  background-image: url(../images/baseTypes/localization-token.png);
+}
+.twicon-resource, span[entity-type="Resources"] {
+  background-image: url(../images/baseTypes/resource.png);
+}
+.twicon-log, span[entity-type="Logs"] {
+  background-image: url(../images/baseTypes/log.png);
+}
+.twicon-GeneralInformation {
+  background-image: url(../images/categoryIcons/generalinformation.png);
+}
+.twicon-Properties {
+  background-image: url(../images/categoryIcons/properties.png);
+}
+.twicon-Services {
+  background-image: url(../images/categoryIcons/services.png);
+}
+.twicon-Events {
+  background-image: url(../images/categoryIcons/events.png);
+}
+.twicon-Subscriptions {
+  background-image: url(../images/categoryIcons/subscriptions.png);
+}
+.twicon-HomeMashup {
+  background-image: url(../images/categoryIcons/homemashup.png);
+}
+.twicon-Mashup {
+  background-image: url(../images/categoryIcons/mashup.png);
+}
+.twicon-DesignTimePermissions {
+  background-image: url(../images/categoryIcons/designtimepermissions.png);
+}
+.twicon-RunTimePermissions {
+  background-image: url(../images/categoryIcons/runtimepermissions.png);
+}
+.twicon-ChangeHistory {
+  background-image: url(../images/categoryIcons/changehistory.png);
+}
+.twicon-FieldDefinitions {
+  background-image: url(../images/categoryIcons/fielddefinitions.png);
+}
+.twicon-Configuration {
+  background-image: url(../images/categoryIcons/configuration.png);
+}
+.twicon-network, .twicon-Network, span[entity-type="Networks"] {
+  background-image: url(../images/categoryIcons/network.png);
+}
+.twicon-Members {
+  background-image: url(../images/categoryIcons/group.png);
+}
+.twicon-Entities {
+  background-image: url(../images/categoryIcons/entities.png);
+}
+.twicon-Terms {
+  background-image: url(../images/categoryIcons/terms.png);
+}
+.twicon-UserExtensions {
+  background-image: url(../images/categoryIcons/userextension.png);
+}
+.twicon-UserProfileConfiguration {
+  background-image: url(../images/categoryIcons/user-profile-configuration.png);
+}
+
+.twicon-Connections {
+  background-image: url(../images/categoryIcons/connections.png);
+}
+.twicon-StyleInformation {
+  background-image: url(../images/categoryIcons/styleinformation.png);
+}
+.twicon-AddNew {
+  background-image: url(../images/categoryIcons/addnew.png);
+}
+.twicon-Delete {
+  background-image: url(../images/categoryIcons/delete.png);
+}
+.twicon-Cut {
+  background-image: url(../images/mashup/cmd/cut.png);
+}
+.twicon-Paste {
+  background-image: url(../images/mashup/cmd/paste.png);
+}
+.twicon-AlignLeft {
+  background-image: url(../images/mashup/cmd/alignleft.png);
+}
+.twicon-AlignCenter {
+  background-image: url(../images/mashup/cmd/aligncenter.png);
+}
+.twicon-AlignRight {
+  background-image: url(../images/mashup/cmd/alignright.png);
+}
+.twicon-AlignBottom {
+  background-image: url(../images/mashup/cmd/alignbottom.png);
+}
+.twicon-AlignMiddle {
+  background-image: url(../images/mashup/cmd/alignmiddle.png);
+}
+.twicon-AlignTop {
+  background-image: url(../images/mashup/cmd/aligntop.png);
+}
+.twicon-SameWidth {
+  background-image: url(../images/mashup/cmd/samewidth.png);
+}
+.twicon-SameHeight {
+  background-image: url(../images/mashup/cmd/sameheight.png);
+}
+.twicon-SameSize {
+  background-image: url(../images/mashup/cmd/samesize.png);
+}
+.twicon-Expand {
+  background-image: url(../images/mashup/cmd/expandfull.png);
+}
+.twicon-EvenVerticalSpacing {
+  background-image: url(../images/mashup/cmd/evenverticalspacing.png);
+}
+.twicon-EvenHorizontalSpacing {
+  background-image: url(../images/mashup/cmd/evenhorizontalspacing.png);
+}
+.twicon-ManageStyles {
+  background-image: url(../images/mashup/cmd/styledefinition.png);
+}
+.twicon-ManageStates {
+  background-image: url(../images/mashup/cmd/statedefinition.png);
+}
+.twicon-ManageMedia {
+  background-image: url(../images/mashup/cmd/mediaentity.png);
+}
+.twicon-ManageMenus {
+  background-image: url(../images/mashup/cmd/menu.png);
+}
+.twicon-Undo {
+  background-image: url(../images/scriptEditorIcons/undo.png);
+}
+.twicon-Redo {
+  background-image: url(../images/scriptEditorIcons/redo.png);
+}
+.twicon-Comment {
+  background-image: url(../images/scriptEditorIcons/comment.png);
+}
+.twicon-Uncomment {
+  background-image: url(../images/scriptEditorIcons/uncomment.png);
+}
+.twicon-CheckSyntax {
+  background-image: url(../images/scriptEditorIcons/checksyntax.png);
+}
+.twicon-Indent {
+  background-image: url(../images/scriptEditorIcons/indent.png);
+}
+.twicon-Outdent {
+  background-image: url(../images/scriptEditorIcons/outdent.png);
+}
+.twicon-AutoFormat {
+  background-image: url(../images/scriptEditorIcons/autoformat.png);
+}
+.twicon-Search {
+  background-image: url(../images/scriptEditorIcons/search.png);
+}
+.twicon-Replace {
+  background-image: url(../images/scriptEditorIcons/replace.png);
+}
+.twicon-ReplaceAll {
+  background-image: url(../images/scriptEditorIcons/replaceall.png);
+}
+.twicon-editLoader {
+  background-image: url(../images/loaders/edit-loader.gif);
+}
+.twicon-International {
+  background-image: url(@../images/international.png);
+}
+.twicon-StaticLanguage {
+  background-image: url(@../images/static-language.png);
+}
+.twicon-LocalizationTokens {
+  background-image: url(@../images/localization-token.png);
+}
+.twicon-Alert {
+  background-image: url(../images/alert.png);
+}
+.twicon-EditAlert {
+  background-image: url(../images/edit-alert.png);
+}
+.twicon-AlertEnabled {
+  background-image: url(../images/alert-enabled.png);
+}
+.twicon-AlertDisabled {
+  background-image: url(../images/alert-disabled.png);
+}
+.twicon-ToggleClosed {
+  background-image:url(../images/toggle-small.png);
+}
+.twicon-ToggleOpen {
+  background-image:url(../images/toggle-small-expand.png);
+}
+.twicon-ApplicationLog {
+  background-image:url(../images/application-log.png);
+}
+.twicon-CommunicationLog {
+  background-image:url(../images/communication-log.png);
+}
+.twicon-ConfigurationLog {
+  background-image:url(../images/configuration-log.png);
+}
+.twicon-SecurityLog {
+  background-image:url(../images/security-log.png);
+}
+.twicon-ComposerLog {
+  background-image:url(../images/composer-log.png);
+}
+.twicon-ScriptLog {
+  background-image:url(../images/script-log.png);
+}
+.twicon-ActiveEdits {
+  background-image:url(../images/all-users-active-edits.png);
+}
+.twicon-SystemStatus {
+  background-image:url(../images/system-status.png);
+}
+.twicon-SubsystemStatus {
+  background-image:url(../images/subsystem-status.png);
+}
+.twicon-SubsystemMonitoring {
+  background-image:url(../images/subsystem-monitoring.png);
+}
+.twicon-UserStatus {
+  background-image:url(../images/user-status.png);
+}
+.twicon-DeviceStatus {
+  background-image:url(../images/device-status.png);
+}
+.twicon-IntegrationConnectorsStatus {
+  background-image:url(../images/integrationconnectors-status.png);
+}
+.twicon-AlertStatus {
+  background-image:url(../images/alert-status.png);
+}
+.twicon-FederationStatus {
+  background-image:url(../images/federation-status.png);
+}
+.twicon-ConnectionServerStatus {
+  background-image:url(../images/connectionserver-status.png);
+}
+.twicon-AlertHistory {
+  background-image:url(../images/alert-history.png);
+}
+.twicon-About {
+  background-image:url(../images/about.png);
+}
+.twicon-License {
+  background-image:url(../images/license.png);
+}
+.twicon-Documentation {
+  background-image:url(../images/documentation.png);
+}
+.twicon-Preferences {
+  background-image:url(../images/preferences.png);
+}
+.twicon-ChangePassword {
+  background-image:url(../images/change-password.png);
+}
+.twicon-ActiveEdits {
+  background-image:url(../images/active-edits.png);
+}
+.twicon-SignOut {
+  background-image:url(../images/sign-out.png);
+}
