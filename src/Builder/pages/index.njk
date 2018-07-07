@@ -8,31 +8,13 @@
     <!-- add dock to div -->
     {% include "partials/dock1.njk" %}
 
-    <div class="tw-container container-col fluid" id="design">
+    <div class="fluid dock tw-container container-col" id="design">
         <!-- widgets, layout, mashups -->
 
-            {#<div class="tabs tw-container visible">#}
-                {#<div class="primary full tabs tw-container" label="widgets">#}
-                    {#Widgets#}
-                    {#<!-- adds widgets list to div -->#}
-                    {#{% include "partials/widgets.njk" %}#}
-                {#</div>#}
-                {#<div class="secondary" id="layout">layout</div>#}
-                {#<div class="secondary" id="mashups">mashups</div>#}
-            {#</div>#}
-
         <!-- design view, connection viewer -->
+        <div class="section" id="layout">layout</div>
 
-                <div class="tw-container" id="layout">layout
-        <a href="./IDE_Before.png">IDE Before Image</a></div>
-                <div class="tw-container fluid" id="connections"> connections</div>
-
-        {#<!-- services, expressions, filters -->#}
-            {#<div class="tabs tw-container visible">#}
-                {#<div class="primary full" id="widgets">services</div>#}
-                {#<div class="secondary" id="layout">expressions</div>#}
-                {#<div class="secondary" id="filters">filters</div>#}
-            {#</div>#}
+        <div class="fluid section" id="connections"> connections</div>
     </div>
 
     <!-- add dock to div -->
