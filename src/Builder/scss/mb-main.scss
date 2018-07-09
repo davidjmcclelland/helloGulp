@@ -1,6 +1,16 @@
 $offWhite: #eff;
 $shadow: #050;
 
+// start flex styling
+#twStudioBody {
+  background: -webkit-linear-gradient(100deg, #772953, #e95420);
+  background: linear-gradient(-10deg, #772953, #e95420);
+  min-height: 100vh;
+  font-size: 18px;
+  /*left:0;
+  position:absolute;*/
+}
+
 .ide {
   min-height: 600px;
 }
@@ -63,7 +73,7 @@ $shadow: #050;
 .section {
   display: flex;
   flex-flow: column nowrap;
-  /*flex: 1;*/
+  flex: 1;
   align-content: stretch;
   align-self: stretch;
   border: 1px solid #eff;
@@ -80,6 +90,122 @@ $shadow: #050;
 
 }
 
+#layout {
+  min-height: 640px;
+}
+
+#design {
+  min-width: 320px;
+}
+
+
+#ui-toolbox {
+  height: 640px;
+}
+
+#mashup-toolbar2{
+  display:flex;
+  flex-wrap: wrap;
+  /* center is centering without any spacing */
+  /*justify-content: center;*/
+  /* space-around is like a justified center spacing */
+  /*justify-content: space-around;*/
+  /* space-between is like space-around but ignores outside Left and Right or ::first and ::last space */
+  justify-content: space-between;
+}
+
+#mashup-toolbar2 .wrappable{
+  flex: 1 0;
+  text-align: center;
+}
+
+#connections {
+ /* flex: .25;*/
+}
+
+#connections-window-1 {
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 32px;
+  bottom: 0;
+}
+
+#model-window-tabs {
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.tw-container > div:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.full {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+}
+.half {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 2 calc(50% - 20px);
+  flex: 0 2 calc(50% - 20px);
+}
+
+.third {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 calc(33.333333% - 20px);
+  flex: 0 1 calc(33.333333% - 20px);
+}
+
+.fourth {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 calc(25% - 20px);
+  flex: 0 1 calc(25% - 20px);
+}
+
+.fifth {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 calc(20% - 20px);
+  flex: 0 1 calc(20% - 20px);
+}
+
+.sixth {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 calc(16.666666% - 20px);
+  flex: 0 1 calc(16.666666% - 20px);
+}
+
+// end flex styling
+
+// hide old composer div that breaks ide when deleted:
+.tabview-content.row-fluid {
+  display: none;
+}
+
+// gray area behind mashup window
+#mashup-ide-workspace-pane {
+  //flex-flow: row wrap;
+  background-color: #d6d6d6;
+  width: 100%;
+  height: calc(100% - 20px);
+}
+
+.mashup-container, .workspace-contents {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+#mashup-ide-data-pane ul.ui-widget-header {
+  padding-right: 80px;
+}
+
 .unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -90,39 +216,9 @@ $shadow: #050;
   user-select: none;
 }
 
-#layout {
-  min-height: 640px;
+// temporary so I can see the rest of the UI
+#workspace {
+  position: relative;
+  height: 100% !important;
 }
 
-#design {
-  flex: 1 0 auto;
-  /*flex: 1;
-  min-width: 320px;*/
-}
-
-// start flex styling
-#twStudioBody {
-  background: -webkit-linear-gradient(100deg, #772953, #e95420);
-  background: linear-gradient(-10deg, #772953, #e95420);
-  min-height: 100vh;
-  font-size: 18px;
-  /*left:0;
-  position:absolute;*/
-}
-
-// gray area behind mashup window
-#mashup-ide-workspace-pane {
-  background-color: #d6d6d6;
-  width: 100%;
-  height: calc(100% - 20px);
-  //overflow: visible ;
-}
-
-#mashup-toolbar2{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-  height:100%;
-}
