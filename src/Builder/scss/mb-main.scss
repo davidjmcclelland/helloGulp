@@ -13,6 +13,7 @@ $shadow: #050;
 
 .ide {
   min-height: 600px;
+  width:100%;
 }
 
 .tw-container {
@@ -62,7 +63,9 @@ $shadow: #050;
   width: 320px;
   min-width: 320px;
 }
-
+.center-col{
+  flex: 1 0 auto;
+}
 // using flex:1 prevents jquery ui resizing if set on both divs in v stack
 .fluid {
   flex: 1 0 auto;
